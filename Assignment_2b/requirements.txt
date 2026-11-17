@@ -1,0 +1,9 @@
+# Python 3.11
+torch>=2.5
+transformers>=4.56      # WavLM, BERT and the Whisper pipeline (the dtype argument needs 4.56)
+numpy>=1.26
+librosa>=0.10           # resampling (soxr), silence trimming, log mel, pyin
+soundfile>=0.12
+scikit-learn>=1.3       # metrics, t-SNE, silhouette
+matplotlib>=3.8
+huggingface_hub>=0.34   # only for the Colab data and result transfer
