@@ -1,0 +1,20 @@
+{
+ "word gt temporal": 0.6028,
+ "word gt contextual": -0.0167,
+ "word gt fusion": 0.8926,
+ "word asr temporal": 0.6028,
+ "word asr contextual": -0.4085,
+ "word asr fusion": 0.8851,
+ "word fusion-model temporal": 0.8243,
+ "word fusion-model contextual": -0.0167,
+ "word fusion-model fusion": 0.8926,
+ "cross_speaker gt temporal": 0.5188,
+ "cross_speaker gt contextual": -0.005,
+ "cross_speaker gt fusion": 0.4484,
+ "cross_speaker asr temporal": 0.5188,
+ "cross_speaker asr contextual": -0.261,
+ "cross_speaker asr fusion": 0.4626,
+ "cross_speaker fusion-model temporal": 0.4369,
+ "cross_speaker fusion-model contextual": -0.005,
+ "cross_speaker fusion-model fusion": 0.4484
+}

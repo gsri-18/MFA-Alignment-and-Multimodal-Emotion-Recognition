@@ -1,0 +1,131 @@
+{
+ "run": "text_gt_cross_speaker_seed2",
+ "pipeline": "text",
+ "split": "cross_speaker",
+ "seed": 2,
+ "variant": "gt",
+ "test_clips": 1400,
+ "accuracy": 0.14285714285714285,
+ "macro_f1": 0.07692029217844785,
+ "best_epoch": 1,
+ "val_macro_f1": 0.07357035767830371,
+ "per_class": {
+  "angry": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1-score": 0.0
+  },
+  "disgust": {
+   "precision": 0.1429,
+   "recall": 0.675,
+   "f1-score": 0.2358
+  },
+  "fear": {
+   "precision": 0.1429,
+   "recall": 0.14,
+   "f1-score": 0.1414
+  },
+  "happy": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1-score": 0.0
+  },
+  "neutral": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1-score": 0.0
+  },
+  "pleasant_surprise": {
+   "precision": 0.1429,
+   "recall": 0.185,
+   "f1-score": 0.1612
+  },
+  "sad": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1-score": 0.0
+  }
+ },
+ "confusion_matrix": [
+  [
+   0,
+   135,
+   28,
+   0,
+   0,
+   37,
+   0
+  ],
+  [
+   0,
+   135,
+   28,
+   0,
+   0,
+   37,
+   0
+  ],
+  [
+   0,
+   135,
+   28,
+   0,
+   0,
+   37,
+   0
+  ],
+  [
+   0,
+   135,
+   28,
+   0,
+   0,
+   37,
+   0
+  ],
+  [
+   0,
+   135,
+   28,
+   0,
+   0,
+   37,
+   0
+  ],
+  [
+   0,
+   135,
+   28,
+   0,
+   0,
+   37,
+   0
+  ],
+  [
+   0,
+   135,
+   28,
+   0,
+   0,
+   37,
+   0
+  ]
+ ],
+ "layer_weights": {
+  "text": [
+   0.0769,
+   0.0769,
+   0.0769,
+   0.0769,
+   0.077,
+   0.0769,
+   0.0769,
+   0.0769,
+   0.0769,
+   0.0769,
+   0.0769,
+   0.0769,
+   0.0769
+  ]
+ }
+}

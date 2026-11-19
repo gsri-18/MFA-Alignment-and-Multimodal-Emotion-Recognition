@@ -48,7 +48,8 @@ def draw_spectrogram(ax, snd, t0, t1):
     ax2.tick_params(axis="y", colors="#1f5fbf", labelsize=7)
 
 
-def draw_tier(ax, intervals, t0, t1, label, colour="black", fontsize=8):
+def draw_tier(ax, intervals, t0, t1, label, colour="black", fontsize=8, min_label_s=0.0):
+    """One TextGrid tier. Labels of intervals shorter than min_label_s are left out so they do not overlap."""
     ax.set_yticks([])
     ax.set_ylabel(label, rotation=0, ha="right", va="center", fontsize=9)
     for s, e, text in intervals:
@@ -57,7 +58,7 @@ def draw_tier(ax, intervals, t0, t1, label, colour="black", fontsize=8):
         for x in (s, e):
             if t0 <= x <= t1:
                 ax.axvline(x, color=colour, lw=0.8)
-        if text not in SILENCE:
+        if text not in SILENCE and min(e, t1) - max(s, t0) >= min_label_s:
             ax.text((max(s, t0) + min(e, t1)) / 2, 0.5, text, ha="center", va="center", fontsize=fontsize,
                     color=colour, clip_on=True)
     ax.set_xlim(t0, t1)
@@ -109,11 +110,11 @@ def overview_figure(clip, run, out_path):
     plt.close(fig)
 
 
-def comparison_figure(clip, t0, t1, out_path):
-    """Word and phone boundaries of every run over the same spectrogram window."""
+def comparison_figure(clip, t0, t1, out_path, runs=None, width=None):
+    """Word and phone boundaries of every run (or of the runs given) over the same spectrogram window."""
     snd = parselmouth.Sound(wav_path(clip))
-    runs = [r for r in RUNS if clip in textgrids(r)]
-    fig, axes = plt.subplots(1 + 2 * len(runs), 1, figsize=(max(8, 4 * (t1 - t0)), 2.2 + 1.0 * len(runs)),
+    runs = [r for r in (runs or RUNS) if clip in textgrids(r)]
+    fig, axes = plt.subplots(1 + 2 * len(runs), 1, figsize=(width or max(8, 4 * (t1 - t0)), 2.2 + 1.0 * len(runs)),
                              sharex=True, gridspec_kw={"height_ratios": [2.4] + [0.45] * 2 * len(runs)})
     draw_spectrogram(axes[0], snd, t0, t1)
     for i, run in enumerate(runs):
@@ -127,7 +128,8 @@ def comparison_figure(clip, t0, t1, out_path):
         draw_tier(axes[1 + 2 * i], tiers["words"], t0, t1, run + " words", c, 8)
         draw_tier(axes[2 + 2 * i], tiers["phones"], t0, t1, run + " phones", c, 6.5)
     axes[-1].set_xlabel("time (s)")
-    axes[0].set_title("{}  {:.2f} to {:.2f} s, boundaries of every run".format(clip, t0, t1), fontsize=10)
+    axes[0].set_title("{}  {:.2f} to {:.2f} s, boundaries of {}".format(
+        clip, t0, t1, "every run" if len(runs) == len(RUNS) else " and ".join(runs)), fontsize=10)
     fig.tight_layout(h_pad=0.15)
     fig.savefig(out_path, dpi=150)
     plt.close(fig)

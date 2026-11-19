@@ -72,7 +72,8 @@ def accuracy_tables(runs):
     order = {"speech": 0, "text": 1, "fusion": 2}
     rows = sorted(groups.items(), key=lambda kv: (SPLITS.index(kv[0][0]), order[kv[0][1]], kv[0][2]))
     L = ["# Test accuracy of every model variant", "",
-         "Mean ± standard deviation over seeds, in percent. Chance is 14.3 % (7 balanced classes).", ""]
+         "Mean ± standard deviation over seeds (population standard deviation), in percent. Chance is 14.3% "
+         "(7 balanced classes).", ""]
     csv_rows = []
     for split in SPLITS:
         sub = [(k, v) for k, v in rows if k[0] == split]
@@ -148,11 +149,13 @@ def tsne_panel(ax, X, y, spk, title):
     Z = TSNE(n_components=2, perplexity=30, init="pca", random_state=0).fit_transform(X.astype(np.float32))
     sil = silhouette_score(X.astype(np.float32), y) if len(set(y)) > 1 else float("nan")
     for i, e in enumerate(EMOTIONS):
+        labelled = False
         for s, marker in (("OAF", "o"), ("YAF", "^")):
             k = (y == i) & (spk == s)
             if k.any():
                 ax.scatter(Z[k, 0], Z[k, 1], s=9, c=COLOURS[i], marker=marker, alpha=0.75, lw=0,
-                           label=SHORT.get(e, e) if s == "OAF" else None)
+                           label=None if labelled else SHORT.get(e, e))
+                labelled = True
     ax.set_title("{}\nsilhouette {:.2f} (in the {}-d space)".format(title, sil, X.shape[1]), fontsize=9)
     ax.set_xticks([])
     ax.set_yticks([])
@@ -303,9 +306,10 @@ def failure_cases(runs, n=5):
                 break
         if len(picked) >= n:
             break
+    used = [s for s in SPLITS if any(p[0] == s for p in picked)]
     L = ["# Failure cases", "",
-         "The most confident errors of the multimodal model ({}, seed 0), one per confusion pair, from the word "
-         "split first and then the cross speaker split.".format(MAIN["fusion"]), "",
+         "The most confident errors of the multimodal model ({}, seed 0), one per confusion pair. The word split is "
+         "searched first, and these come from the {} split.".format(MAIN["fusion"], " and ".join(used)), "",
          "| # | split | clip | true | fusion predicts (confidence) | speech only | text only | fusion with ASR text | Whisper transcript |",
          "|---|---|---|---|---|---|---|---|---|"]
     for i, (split, r, o) in enumerate(picked, 1):

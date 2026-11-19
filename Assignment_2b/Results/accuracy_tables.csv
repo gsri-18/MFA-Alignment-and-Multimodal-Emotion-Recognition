@@ -1,0 +1,15 @@
+split,pipeline,variant,seeds,accuracy_mean,accuracy_std,macro_f1_mean,macro_f1_std
+word,speech,mel,3,99.84,0.11,99.84,0.11
+word,speech,wavlm,3,99.84,0.22,99.84,0.22
+word,text,asr,3,18.97,0.3,12.49,0.45
+word,text,gt,3,14.29,0.0,4.5,1.31
+word,fusion,wavlm-asr-gated,3,99.92,0.11,99.92,0.11
+word,fusion,wavlm-gt-concat,3,99.92,0.11,99.92,0.11
+word,fusion,wavlm-gt-gated,3,99.92,0.11,99.92,0.11
+cross_speaker,speech,mel,3,52.17,2.7,48.82,5.15
+cross_speaker,speech,wavlm,3,65.62,5.84,59.81,7.06
+cross_speaker,text,asr,3,17.02,0.66,13.39,1.93
+cross_speaker,text,gt,3,14.29,0.0,5.87,1.72
+cross_speaker,fusion,wavlm-asr-gated,3,57.55,11.24,55.41,10.45
+cross_speaker,fusion,wavlm-gt-concat,3,55.31,5.77,52.01,4.41
+cross_speaker,fusion,wavlm-gt-gated,3,55.83,1.6,50.44,1.47

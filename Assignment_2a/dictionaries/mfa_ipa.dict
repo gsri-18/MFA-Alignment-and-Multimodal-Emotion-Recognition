@@ -1,0 +1,571 @@
+a	0.02	0.18	0.93	1.02	ɒ
+a	0.99	0.04	1.32	0.94	ə
+a	0.01	0.25	1.0	1.0	ej
+a	0.09	0.08	2.11	0.77	e
+a	0.01	0.25	1.0	1.0	ɑː
+a	0.04	0.1	2.03	0.75	a
+a	0.01	0.34	2.32	0.38	ɑ
+abilities	0.5	0.25	1.0	1.0	a bʲ i ʎ i tʲ i z
+abilities	0.99	0.5	0.94	1.04	ə bʲ ɪ ʎ ɪ tʲ i z
+abilities	0.5	0.25	1.0	1.0	a bʲ ɪ ʎ ɪ tʲ i z
+act	0.08	0.38	1.17	0.87	a t
+act	0.31	0.88	0.51	1.17	æ k t
+act	0.99	0.41	1.66	0.58	a k t
+administration	0.57	0.5	0.87	1.06	d mʲ ɪ n ə s tʃ ɹ ej ʃ ə n
+administration	0.99	0.56	1.45	0.76	ə d mʲ ɪ n ə s t ɹ ej ʃ ə n
+administration	0.29	0.5	0.99	1.01	a d mʲ i n i s t ɹ e ʃ ɔ n
+administrative	0.99	0.35	1.67	0.78	ə d mʲ ɪ ɲ ɪ s t ɹ ej tʲ ɪ v
+administrative	0.22	0.17	1.15	0.84	ə d mʲ ɪ ɲ ɪ s t ɹ ə tʲ ɪ v
+administrative	0.22	0.17	0.95	1.04	a d mʲ i ɲ i s t ɹ a tʲ i v
+admirers	0.5	0.25	1.0	1.0	æ d m aj ɹ ɚ z
+admirers	0.5	0.25	1.0	1.0	ə d m aj ɹ ə z
+admirers	0.99	0.5	1.14	0.85	æ d m aj ɚ ʔ ɚ z
+admirers	0.99	0.5	1.32	0.74	a d m aj ɹ a z
+age	0.99	0.42	1.86	0.7	ej dʒ
+age	0.03	0.25	1.0	1.0	e dʒ
+ago	0.07	0.7	1.33	0.62	ə ɡ ow
+ago	0.99	0.81	0.07	1.82	ə ɡ əw
+ago	0.02	0.25	1.0	1.0	a ɡ o
+along	0.12	0.15	1.43	0.77	a l ɔ ŋ ɡ
+along	0.99	0.13	1.22	0.9	ə l ɒ ŋ
+along	0.08	0.36	0.65	1.18	l ɒ ŋ
+along	0.17	0.5	1.18	0.88	ə l ɑ ŋ
+an	0.2	0.58	3.42	0.18	a n
+an	0.99	0.21	1.01	1.0	ə n
+an	0.05	0.01	0.28	1.18	æ n
+an	0.05	0.09	0.86	1.03	n̩
+and	0.04	0.12	1.11	0.93	æ
+and	0.01	0.12	1.11	0.93	n̩ d
+and	0.37	0.08	0.75	1.13	ɪ n
+and	0.04	0.32	0.83	1.08	n̩
+and	0.07	0.01	0.06	1.4	æ n
+and	0.17	0.07	1.66	0.56	æ n t
+and	0.68	0.24	2.24	0.06	a n d
+and	0.99	0.09	1.87	0.4	ɛ n
+and	0.22	0.16	0.95	1.03	ə n d
+and	0.72	0.03	0.77	1.12	ə n
+and	0.05	0.27	1.22	0.87	æ t
+and	0.11	0.01	0.04	1.42	æ n d
+and	0.51	0.04	2.14	0.05	a n
+another	0.08	0.21	1.67	0.76	n ɐ d̪ ɚ
+another	0.16	0.35	2.97	0.57	a n ɐ d̪ ə
+another	0.99	0.12	2.01	0.79	ə n ɐ d̪ ə
+another	0.05	0.5	1.4	0.82	æ n ɐ d̪ ɚ
+another	0.08	0.64	0.83	1.06	n ɐ d̪ ə
+another	0.06	0.25	0.88	1.05	a n ɔ d̪ a
+another	0.75	0.06	1.38	0.9	ə n ɐ d̪ ɚ
+another	0.12	0.15	2.12	0.65	ə n ɐ z ɚ
+another	0.01	0.25	1.0	1.0	a n ɔ d a
+another	0.03	0.5	1.4	0.7	ə n ɐ ð ə
+another	0.01	0.25	1.0	1.0	æ n ɐ ð ɚ
+another	0.01	0.25	1.0	1.0	ə n ɐ ð ɚ
+another	0.01	0.25	1.0	1.0	a n ɐ ð ə
+another	0.03	0.5	1.26	0.76	a n ɔ ð a
+appointment	0.99	0.3	0.76	1.14	ə pʰ ɔj n m ɛ n t
+appointment	0.25	0.25	1.0	1.0	ə pʰ ɔj n m ə n t
+appointment	0.5	0.5	0.95	1.04	pʰ ɔj n t m ɪ n
+appointment	0.75	0.38	0.87	1.08	ə pʰ ɔj n t m ɛ n t
+appointment	0.25	0.25	1.0	1.0	a pʰ ɔj n t m ɛ n t
+appointments	0.5	0.25	1.0	1.0	a pʰ ɔj n t m ɛ n t s
+appointments	0.99	0.5	0.82	1.17	ə pʰ ɔj n t m ɛ n t s
+appointments	0.5	0.25	1.0	1.0	ə pʰ ɔj n m ɛ n t s
+appointments	0.99	0.5	0.95	1.03	ə pʰ ɔj n m ə n t s
+approval	0.99	0.17	0.94	1.04	ə p ɹ ʉ v ə ɫ
+approval	0.5	0.25	1.0	1.0	ə p ɹ ʉː v ə ɫ
+approval	0.5	0.25	1.0	1.0	a p ɹ uː v a ɫ
+april	0.2	0.17	0.95	1.04	ej p ɹ ɪ ɫ
+april	0.1	0.25	1.0	1.0	e pʲ i ɫ
+april	0.2	0.5	1.0	1.0	ej p ə ɫ
+april	0.1	0.25	1.0	1.0	e p ɹ i ɫ
+april	0.99	0.77	1.39	0.85	ej p ɹ ə ɫ
+as	0.79	0.01	1.77	0.65	e z
+as	0.26	0.99	1.54	0.73	a s
+as	0.99	0.01	1.7	0.69	æ s
+as	0.03	0.92	1.59	0.59	ej z
+associate	0.33	0.25	1.0	1.0	ə s əw ʃ i ə t
+associate	0.33	0.25	1.0	1.0	ə s əw ʃ i ej t
+associate	0.33	0.25	1.0	1.0	ə s əw s i ə t
+associate	0.33	0.25	1.0	1.0	ə s ow s i ej t
+associate	0.67	0.17	1.0	1.0	ə s ow s i ə t
+associate	0.67	0.17	0.97	1.02	ə s ow ʃ i ej t
+associate	0.67	0.17	1.0	1.0	ə s ow ʃ i ə t
+associate	0.99	0.12	0.83	1.12	ə s əw s i ej t
+associate	0.33	0.25	1.0	1.0	a s o s i e t
+associate	0.33	0.25	1.0	1.0	a s o ʃ i a t
+associate	0.33	0.25	1.0	1.0	a s o s i a t
+associate	0.33	0.25	1.0	1.0	a s o ʃ i e t
+association	0.75	0.5	0.77	1.18	ə s əw s i ej ʃ ə n
+association	0.38	0.62	1.1	0.92	ə s əw ʃ i ej ʃ ə n
+association	0.99	0.28	0.75	1.14	ə s ow s i ej ʃ ə n
+association	0.88	0.44	0.91	1.04	ə s ow ʃ i ej ʃ ə n
+association	0.5	0.5	0.66	1.26	a s o s i e ʃ ɔ n
+association	0.12	0.25	1.0	1.0	a s o ʃ i e ʃ ɔ n
+author	0.33	0.17	1.49	0.67	ɒː θ ə
+author	0.99	0.21	1.22	0.92	ɒː θ ɚ
+author	0.17	0.25	1.0	1.0	ɔ θ ɔ
+author	0.67	0.3	1.44	0.71	ɑː t̪ ə
+author	0.99	0.64	1.47	0.72	ɔ t̪ ɔ
+author	0.83	0.42	1.6	0.73	ɒː s ə
+author	0.67	0.3	0.94	1.05	ɑː θ ɚ
+b	0.99	0.43	1.4	0.86	bʲ iː
+bad	0.69	0.03	0.84	1.05	b a d
+bad	0.27	0.56	0.82	1.1	b æ ɾ
+bad	0.99	0.94	0.3	1.21	b æ d
+bait	0.99	0.25	1.0	1.0	b ej t
+bait	0.99	0.25	1.0	1.0	b e t
+bar	0.88	0.5	1.05	0.98	b ɑ ɹ
+bar	0.99	0.5	0.86	1.05	b ɑː
+bar	0.12	0.17	0.92	1.06	b a
+be	0.17	0.95	1.46	0.91	bʲ iː
+be	0.99	0.01	0.61	1.04	bʲ i
+bed	0.99	0.76	1.03	1.0	b ɛ d
+bed	0.2	0.64	1.21	0.92	b ɛ ɾ
+began	0.03	0.1	1.45	0.71	b ɛ ɡ a n
+began	0.99	0.01	0.76	1.08	bʲ ɪ ɡ a n
+began	0.14	0.93	0.67	1.16	bʲ ɪ ɡ æ n
+budget	0.12	0.25	1.0	1.0	b ɔ dʒ i t
+budget	0.99	0.28	0.93	1.03	b ɐ dʒ ɪ t
+campaign	0.56	0.42	1.2	0.91	cʰ æ m pʰ ej n
+campaign	0.99	0.55	0.59	1.16	kʰ ə m pʰ ej n
+campaign	0.78	0.31	0.65	1.16	kʰ a m pʰ ej n
+campaign	0.56	0.42	1.19	0.91	kʰ a m pʰ e n
+career	0.16	0.3	0.78	1.13	kʰ a ɹ i a
+career	0.99	0.52	0.34	1.17	kʰ ə ɹ ɪ ɹ
+career	0.84	0.43	0.79	1.07	kʰ ə ɹ ɪ ə
+chief	0.99	0.35	1.09	0.98	tʃ iː f
+clerk	0.2	0.25	1.0	1.0	k l ɑː k
+clerk	0.2	0.25	1.0	1.0	k l a k
+clerk	0.99	0.58	0.62	1.26	k l ɝ k
+colleagues	0.25	0.25	1.0	1.0	kʰ ɒ ʎ iː ɡ z
+colleagues	0.25	0.25	1.0	1.0	kʰ ɑ ʎ i ɡ z
+colleagues	0.99	0.5	0.95	1.02	kʰ ɑ ʎ iː ɡ z
+colleagues	0.25	0.25	1.0	1.0	kʰ ɔ ʎ iː ɡ z
+court	0.58	0.66	1.17	0.93	kʰ ɒː t
+court	0.04	0.25	1.0	1.0	kʰ ɔ t
+court	0.99	0.57	0.77	1.07	kʰ ɒ ɹ t
+credit	0.99	0.44	1.47	0.83	c ɹ ɛ dʲ ɪ t
+credit	0.14	0.25	1.0	1.0	c ɹ ɛ dʲ i t
+credit	0.29	0.17	0.93	1.05	c ɹ ɛ ɾʲ i
+crumbling	0.99	0.12	0.88	1.07	k ɹ ɐ m bʲ ʎ ɪ ŋ
+crumbling	0.33	0.25	1.0	1.0	k ɹ ɐ m b ʎ ɪ ŋ
+current	0.02	0.25	1.0	1.0	kʰ ɔ ɹ ɛ n t
+current	0.02	0.25	1.0	1.0	kʰ ɝ ɹ ɛ n t
+current	0.02	0.25	1.0	1.0	kʰ ɝ ɹ ə n t
+current	0.16	0.19	1.0	1.0	kʰ ɐ ɹ ɛ n t
+current	0.99	0.08	1.09	0.99	kʰ ɐ ɹ ə n t
+de	0.38	0.12	1.12	0.9	dʲ i
+de	0.99	0.28	1.21	0.91	dʲ iː iː
+de	0.75	0.07	1.29	0.9	d ə
+de	0.75	0.07	1.32	0.84	d ej
+decade	0.25	0.17	0.98	1.01	d ɛ cʰ e d
+decade	0.12	0.25	1.0	1.0	d ɛ k ə d
+decade	0.99	0.5	0.67	1.12	d ɛ cʰ ej d
+decade	0.25	0.17	0.99	1.01	d ə cʰ ej d
+deficit	0.99	0.38	1.12	0.9	d ɛ fʲ ɪ s ɪ t
+deficit	0.67	0.5	1.46	0.68	d ɛ fʲ i s i t
+deficit	0.33	0.25	1.0	1.0	d ɛ f ə s ɪ t
+democratic	0.27	0.38	0.93	1.04	d ɛ m ə c ɹ æ tʲ ɪ k
+democratic	0.36	0.3	0.99	1.01	d ɛ m ɔ k ɹ a tʲ i k
+democratic	0.99	0.21	1.06	0.99	d ɛ m ə k ɹ a tʲ ɪ k
+despite	0.05	0.25	1.0	1.0	d ɛ s p aj t
+despite	0.99	0.21	4.2	0.36	dʲ ɪ s p aj t
+distinguished	0.6	0.38	1.36	0.79	dʲ i s tʲ i ɲ ɟʷ i ʃ t
+distinguished	0.99	0.25	1.94	0.67	dʲ ɪ s tʲ ɪ ɲ ɟʷ ɪ ʃ t
+dollars	0.71	0.79	0.4	1.16	d ɑ l ɚ z
+dollars	0.04	0.25	1.0	1.0	d ɔ l a z
+dollars	0.99	0.74	0.81	1.06	d ɒ l ə z
+during	0.31	0.13	1.96	0.57	d ʊ ɹ ɪ ŋ
+during	0.07	0.21	0.82	1.13	d ɝ ɪ ŋ
+during	0.21	0.08	1.29	0.91	dʒ ʊ ɹ ɪ n
+during	0.26	0.02	1.91	0.64	dʒ ʊ ɹ ɪ ŋ
+during	0.25	0.17	0.73	1.15	dʲ ʊ ɹ ɪ ŋ
+during	0.99	0.06	2.63	0.52	d ʊ ɹ ɪ n
+during	0.09	0.31	1.32	0.8	dʲ ʊ ɹ i ŋ ɡ
+during	0.07	0.07	1.79	0.64	dʒ ʊ ɹ i ŋ ɡ
+edward	0.99	0.45	1.29	0.76	ɛ d w ɚ d
+edward	0.89	0.61	1.31	0.71	ɛ d w ə d
+edward	0.33	0.38	1.34	0.66	ɛ d w a d
+eight	0.02	0.25	1.0	1.0	e t
+eight	0.99	0.38	2.71	0.25	ej t
+eight	0.14	0.36	0.96	1.02	ej
+expected	0.27	0.3	0.95	1.02	ɛ k s p ɛ k t ɛ d
+expected	0.99	0.22	0.53	1.12	ɪ k s p ɛ k tʲ ɪ d
+five	0.99	0.38	0.78	1.06	f aj v
+follow	0.35	0.06	2.62	0.26	f ɔ l o
+follow	0.26	0.07	1.36	0.88	f ɑ l ow
+follow	0.99	0.19	0.4	1.15	f ɒ l əw
+follow	0.09	0.5	0.99	1.01	f ɑ l əw
+for	0.6	0.01	0.42	1.22	f ɚ
+for	0.99	0.17	0.9	1.04	f ɒ ɹ
+for	0.84	0.1	1.01	0.99	f ɔ
+for	0.01	0.17	1.21	0.79	f a
+for	0.51	0.01	0.61	1.14	f ə
+for	0.01	0.32	0.44	1.3	f ɑː
+for	0.01	0.25	1.0	1.0	f ɒː
+from	0.03	0.59	0.86	1.07	f ɹ ɑ m
+from	0.16	0.98	0.81	1.09	f ɹ ɒ m
+from	0.99	0.08	0.64	1.13	f ɹ ə m
+from	0.01	0.25	1.0	1.0	f ɹ ɐ m
+from	0.33	0.01	0.85	1.06	f ɹ ɔ m
+from	0.37	0.08	0.5	1.2	f ɹ m̩
+fulfilled	0.5	0.25	1.0	1.0	f u fʲ i ɫ d
+fulfilled	0.99	0.17	0.9	1.08	f ʊ ɫ fʲ ɪ ɫ d
+fulfilled	0.99	0.17	0.9	1.08	f ə fʲ ɪ ɫ d
+fulfilled	0.99	0.17	0.9	1.08	f ʊ ɫ fʲ i ɫ d
+gains	0.99	0.28	0.9	1.04	ɟ ej n z
+gains	0.12	0.25	1.0	1.0	ɡ ej n z
+gains	0.12	0.25	1.0	1.0	ɡ e n z
+give	0.1	0.05	1.83	0.72	ɟ i v
+give	0.99	0.07	2.63	0.71	ɟ ɪ v
+governor	0.1	0.17	0.89	1.09	ɡ ɔ v a n ɔ
+governor	0.1	0.5	1.13	0.85	ɡ ɐ v ə ɾ̃ ə
+governor	0.99	0.55	1.36	0.9	ɡ ɐ v ə n ə
+governor	0.05	0.25	1.0	1.0	ɡ ɐ v n ɚ
+governor	0.25	0.08	0.84	1.07	ɡ ɐ v ɚ n ɚ
+governor	0.35	0.19	0.69	1.12	ɡ ɐ v ə n ɚ
+hard	0.14	0.12	0.96	1.02	h a d
+hard	0.86	0.24	0.9	1.03	h ɑ ɹ d
+hard	0.99	0.2	0.57	1.07	h ɑː d
+hard	0.24	0.42	1.39	0.78	h ɑː ɾ
+he	0.01	0.25	1.0	1.0	iː
+he	0.01	0.25	1.0	1.0	ç iː
+he	0.07	0.09	0.63	1.08	i
+he	0.99	0.04	4.08	0.45	ç i
+head	0.99	0.66	0.73	1.06	h ɛ d
+head	0.08	0.19	0.87	1.04	h ɛ ɾ
+hennessy	0.99	0.17	1.49	0.67	h ɛ ɲ ɪ s i
+hennessy	0.5	0.25	1.0	1.0	h ɛ n ə s i
+his	0.16	0.26	1.86	0.82	ç i z
+his	0.99	0.08	1.29	0.95	ç ɪ z
+houses	0.14	0.38	0.89	1.07	h aw z ɛ z
+houses	0.86	0.39	0.67	1.09	h aw s ɪ z
+houses	0.99	0.52	0.77	1.08	h aw z ɪ z
+hundred	0.11	0.19	0.71	1.11	h ɐ n d ɹ ə d
+hundred	0.99	0.35	0.38	1.16	h ɐ n dʲ ɹ ɪ d
+hundred	0.03	0.5	0.85	1.13	h ɔ n ɹ a d
+hundred	0.05	0.12	1.26	0.83	h ɔ n d ɹ a d
+hundred	0.02	0.25	1.0	1.0	h ɔ n d ɹ i d
+hundred	0.13	0.61	0.6	1.18	h ɐ n ɹ ə d
+hundred	0.05	0.38	0.97	1.02	h ɐ n d ɹ ə ɾ
+hundred	0.03	0.5	1.2	0.8	h ɐ n dʒ ɪ d
+i	0.01	0.15	2.75	0.59	ɑː
+i	0.99	0.03	5.47	0.33	aj
+i	0.06	0.13	1.91	0.84	ə
+important	0.33	0.06	0.67	1.12	ɪ m pʰ ɒ ɹ ʔ ə n t
+important	0.42	0.05	0.95	1.03	ɪ m pʰ ɒː t ə n
+important	0.92	0.11	0.76	1.08	ɪ m pʰ ɒ ɹ t ə n
+important	0.08	0.17	1.36	0.72	i m pʰ ɔ t a n t
+important	0.21	0.08	0.83	1.08	ɪ m pʰ ɒː ɾ n̩
+important	0.99	0.5	0.88	1.03	ɪ m pʰ ɒ ɹ t ə n t
+important	0.99	0.3	0.66	1.1	ɪ m pʰ ɒː t ə n t
+in	0.12	0.08	0.14	1.33	ə n
+in	0.99	0.06	1.27	0.88	ɪ n
+in	0.07	0.11	0.14	1.32	tʲ ɪ n
+in	0.02	0.13	0.47	1.2	n̩
+in	0.07	0.31	1.01	0.99	i n
+is	0.99	0.08	0.91	1.04	ɪ z
+is	0.06	0.24	0.77	1.1	i z
+it	0.05	0.57	1.98	0.78	i t
+it	0.16	0.01	7.36	0.18	ɪ
+it	0.01	0.17	1.35	0.72	ɪ ʔ
+it	0.02	0.22	1.98	0.82	i
+it	0.99	0.29	3.5	0.6	ɪ t
+j	0.99	0.55	1.23	0.84	dʒ ej
+j	0.11	0.25	1.0	1.0	dʒ e
+judicial	0.99	0.25	1.0	1.0	dʒ u dʲ i ʃ a ɫ
+judicial	0.99	0.25	1.0	1.0	dʒ ʉ dʲ ɪ ʃ ə ɫ
+justice	0.99	0.38	1.16	0.93	dʒ ɐ s tʲ ɪ s
+justice	0.18	0.17	0.77	1.24	dʒ ɔ s tʲ i s
+last	0.12	0.06	0.92	1.02	l ɑː s
+last	0.93	0.2	0.96	1.01	l ɑː s t
+last	0.36	0.12	1.05	0.99	l æ s
+last	0.99	0.04	0.99	1.0	l æ s t
+last	0.2	0.88	0.6	1.13	l a s t
+law	0.99	0.96	0.59	1.11	l ɔ
+law	0.03	0.25	1.0	1.0	l ɒ
+law	0.16	0.21	0.75	1.11	l ɑ
+law	0.65	0.02	0.69	1.09	l ɒː
+lawyer	0.12	0.25	1.0	1.0	l ɔj a
+lawyer	0.12	0.25	1.0	1.0	l ɔ j a
+lawyer	0.99	0.72	0.72	1.09	l ɔj ɹ
+lawyer	0.5	0.7	0.8	1.11	l ɒː j ə
+lawyer	0.12	0.25	1.0	1.0	l ɔj ə
+leader	0.17	0.17	0.96	1.03	ʎ iː d a
+leader	0.99	0.27	0.59	1.12	ʎ iː d ɚ
+leader	0.83	0.5	0.57	1.16	ʎ iː d ə
+led	0.08	0.3	1.05	0.96	ɛ ʎ iː dʲ iː
+led	0.99	0.18	0.81	1.06	l ɛ d
+legal	0.99	0.32	0.99	1.0	ʎ i ɡ ə ɫ
+legal	0.38	0.42	0.89	1.08	ʎ i ɡ ɫ̩
+legal	0.31	0.1	1.33	0.84	ʎ iː ɡ ə ɫ
+legal	0.08	0.25	1.0	1.0	ʎ iː ɡ a ɫ
+legislative	0.17	0.25	1.0	1.0	l ɛ dʒ i s l a tʲ i v
+legislative	0.99	0.5	0.85	1.09	l ɛ dʒ ɪ s l ej tʲ ɪ v
+legislative	0.33	0.5	1.49	0.67	l ɛ dʒ ɪ s l ə tʲ ɪ v
+makes	0.29	0.13	2.14	0.17	m e k s
+makes	0.99	0.09	0.15	1.22	m ej k s
+mandatory	0.5	0.25	1.0	1.0	m a n d a t ɔ ɹ i
+mandatory	0.5	0.25	1.0	1.0	m a n d ə t ə ɹ i
+mandatory	0.99	0.17	0.93	1.05	m æ n d ə tʰ ɒ ɹ i
+march	0.67	0.72	1.05	0.98	m ɑ ɹ tʃ
+march	0.99	0.5	1.17	0.93	m ɑː tʃ
+march	0.25	0.62	1.28	0.69	m a tʃ
+margo	0.99	0.25	1.0	1.0	m ɑː ɡ əw
+massachusetts	0.09	0.25	1.0	1.0	m æ s ə tʃ ʉː s ɪ t s
+massachusetts	0.09	0.25	1.0	1.0	m a s ɛ tʃ uː s i t s
+massachusetts	0.99	0.79	0.97	1.01	m a s ə tʃ ʉː s ɪ t s
+massive	0.99	0.56	0.71	1.11	m a s ɪ v
+massive	0.57	0.5	0.85	1.08	m a s i v
+massive	0.29	0.5	0.96	1.03	m æ s ɪ v
+may	0.99	0.01	1.09	0.96	m ej
+may	0.11	0.93	1.22	0.91	m e
+michael	0.99	0.26	2.19	0.5	m aj k ə ɫ
+michael	0.18	0.42	1.06	0.97	m aj k ɛ ɫ
+million	0.99	0.08	0.88	1.02	mʲ ɪ ʎ ə n
+million	0.12	0.17	0.96	1.03	mʲ i l u n
+more	0.39	0.22	0.65	1.07	m ɒː
+more	0.01	0.25	1.0	1.0	m ɔ
+more	0.99	0.26	0.58	1.08	m ɒː ɹ
+more	0.02	0.06	1.05	0.98	m ɑː
+most	0.99	0.2	3.03	0.71	m əw s t
+most	0.38	0.01	2.57	0.75	m əw s
+most	0.01	0.25	1.0	1.0	m ow s
+most	0.01	0.25	1.0	1.0	m o s t
+most	0.01	0.25	1.0	1.0	m ow s t
+much	0.08	0.09	0.84	1.05	m ɔ tʃ
+much	0.99	0.25	0.97	1.01	m ɐ tʃ
+named	0.6	0.97	1.0	1.0	n e m d
+named	0.99	0.01	0.54	1.09	ɲ ej m d
+new	0.01	0.25	1.0	1.0	ɲ uː
+new	0.99	0.09	1.24	0.96	ɲ ʉː
+nineteen	0.99	0.25	1.35	0.79	n aj n tʲ iː n
+nineteen	0.08	0.25	1.0	1.0	n aj n tʰ iː n
+no	0.01	0.25	1.0	1.0	n o
+no	0.01	0.25	1.0	1.0	n ow
+no	0.99	0.15	2.27	0.76	n əw
+not	0.99	0.22	0.86	1.02	n ɑ t
+not	0.01	0.44	0.75	1.09	n a t
+not	0.43	0.05	1.29	0.95	n ɔ t
+not	0.05	0.22	1.51	0.88	n ə t
+not	0.13	0.98	0.19	1.12	n ɒ t
+not	0.03	0.14	1.04	0.99	n ə
+not	0.04	0.02	0.95	1.01	n ɑ
+not	0.04	0.07	0.49	1.1	n ɒ
+not	0.02	0.14	1.9	0.71	n a
+not	0.01	0.12	1.44	0.62	n ɔ
+now	0.99	0.47	2.11	0.78	n aw
+of	0.3	0.37	2.1	0.01	ɒ v
+of	0.15	0.54	1.67	0.57	ɑ v
+of	0.11	0.13	0.47	1.23	ə
+of	0.05	0.05	0.66	1.12	ɔ
+of	0.99	0.2	0.01	1.38	ɔ v
+of	0.99	0.14	0.31	1.28	ə v
+one	0.99	0.01	1.78	0.84	w ɔ n
+one	0.18	0.99	0.79	1.05	w ɒ n
+one	0.07	0.35	1.41	0.91	w ɑ n
+one	0.22	0.14	1.32	0.94	w ɐ n
+opinions	0.17	0.25	1.0	1.0	ɔ pʲ i ɲ ɔ n z
+opinions	0.17	0.25	1.0	1.0	ə p ɪ ɲ ə n z
+opinions	0.99	0.07	1.63	0.76	ə pʲ ɪ ɲ ə n z
+politicize	pʰ ɔ ʎ i tʲ i s aj z
+politicize	pʰ ə ʎ ɪ tʲ ɪ s aj z
+president	0.18	0.21	0.87	1.04	p ɹ ɛ z i d ɛ n t
+president	0.99	0.34	0.96	1.01	p ɹ ɛ z ɪ d ə n t
+president	0.36	0.19	0.93	1.02	p ɹ ɛ z ɪ d ə n
+president	0.42	0.37	0.96	1.01	p ɹ ɛ z d ə n t
+promise	0.22	0.17	1.4	0.7	p ɹ ɑ mʲ ɪ s
+promise	0.11	0.25	1.0	1.0	p ɹ ɔ mʲ i s
+promise	0.99	0.65	1.06	0.97	p ɹ ɒ mʲ ɪ s
+reaches	0.25	0.5	0.98	1.02	ɹ iː tʃ ɛ z
+reaches	0.99	0.17	0.87	1.06	ɹ iː tʃ ɪ z
+recently	0.6	0.21	1.34	0.83	ɹ iː s ɛ n t ʎ i
+recently	0.7	0.31	1.63	0.79	ɹ iː s ə n t ʎ i
+recently	0.99	0.32	1.45	0.79	ɹ iː s ə n tʲ ʎ i
+reform	0.2	0.25	1.0	1.0	ɹ ə f ɒ ɹ m
+reform	0.99	0.58	0.73	1.14	ɹ ɪ f ɒ ɹ m
+reform	0.8	0.5	1.14	0.92	ɹ ɪ f ɒː m
+reform	0.4	0.17	0.75	1.29	ɹ i f ɔ m
+remainder	0.5	0.62	0.88	1.07	ɹ ə m ej n d ɚ
+remainder	0.33	0.17	0.99	1.01	ɹ ə m ej n d ə
+remainder	0.17	0.25	1.0	1.0	ɹ i m e n d a
+remainder	0.17	0.25	1.0	1.0	ɹ ɛ m e n d a
+remainder	0.99	0.07	0.9	1.03	ɹ ɪ m ej n d ə
+reports	0.99	0.31	1.22	0.89	ɹ ɪ pʰ ɒ ɹ t s
+reports	0.29	0.5	0.97	1.02	ɹ i pʰ ɔ t s
+reports	0.99	0.44	1.03	0.98	ɹ ɪ pʰ ɒː t s
+republican	0.89	0.28	1.15	0.95	ɹ ɪ pʰ ɐ b ʎ ɪ k ə n
+republican	0.22	0.17	1.49	0.67	ɹ i pʰ ɔ b ʎ i k a n
+republican	0.99	0.25	1.18	0.93	ɹ ɪ pʰ ɐ bʲ ʎ ɪ k ə n
+respected	0.25	0.25	1.0	1.0	ɹ i s p ɛ k t ɛ d
+respected	0.99	0.1	0.75	1.15	ɹ ɪ s p ɛ k tʲ ɪ d
+restore	0.5	0.17	0.97	1.02	ɹ i s t ɔ
+restore	0.99	0.1	1.39	0.83	ɹ ɪ s t ɒ ɹ
+restore	0.25	0.25	1.0	1.0	ɹ ɪ s t ɒː
+retirement	0.25	0.25	1.0	1.0	ɹ ɪ tʰ aj ɹ m ə n t
+retirement	0.5	0.5	0.96	1.03	ɹ ɛ tʰ aj a m ɛ n t
+retirement	0.75	0.38	0.82	1.12	ɹ ɪ tʰ aj ɹ m ɛ n t
+retirement	0.99	0.5	0.9	1.05	ɹ ə tʰ aj ə m ɛ n t
+retreat	0.14	0.25	1.0	1.0	ɹ iː tʲ ɹ iː t
+retreat	0.99	0.56	0.8	1.07	ɹ i tʃ ɹ iː t
+retreat	0.14	0.25	1.0	1.0	ɹ iː t ɹ iː t
+retreat	0.14	0.25	1.0	1.0	ɹ i tʲ ɹ iː t
+retreat	0.14	0.25	1.0	1.0	ɹ ə tʲ ɹ iː t
+retreat	0.14	0.25	1.0	1.0	ɹ ɛ t ɹ iː t
+s	0.99	0.15	1.79	0.62	ɛ s
+said	0.04	0.64	0.97	1.01	s aj d
+said	0.1	0.26	1.23	0.89	s ɛ ɾ
+said	0.04	0.92	1.19	0.96	s aj ɾ
+said	0.99	0.61	0.78	1.06	s ɛ d
+scholarship	0.25	0.25	1.0	1.0	s k ɑː l ɚ ʃ ɪ p
+scholarship	0.25	0.25	1.0	1.0	s k ɔ l a ʃ i p
+scholarship	0.99	0.5	0.88	1.06	s k ɒ l ə ʃ ɪ p
+seventy	0.33	0.17	0.83	1.16	s ɛ v ɛ n tʰ i
+seventy	0.99	0.07	1.24	0.87	s ɛ v ə n tʲ i
+six	0.99	0.24	0.93	1.02	s ɪ k s
+six	0.14	0.04	0.71	1.12	s i k s
+state	0.99	0.01	0.6	1.1	s t e t
+state	0.65	0.97	0.93	1.02	s t ej t
+step	0.99	0.43	0.81	1.04	s t ɛ p
+successor	0.75	0.38	0.96	1.02	s ə k s ɛ s ɚ
+successor	0.25	0.25	1.0	1.0	s ɔ k s ɛ s ɔ
+successor	0.25	0.25	1.0	1.0	s u k s ɛ s ɔ
+successor	0.99	0.1	0.9	1.05	s ə k s ɛ s ə
+successor	0.25	0.25	1.0	1.0	s ɐ k s ɛ s ɒː
+successor	0.5	0.5	0.96	1.03	s ɐ k s ɛ s ə
+supreme	0.5	0.17	0.97	1.02	s j uː p ɹ iː m
+supreme	0.99	0.3	0.95	1.02	s ʉ p ɹ iː m
+supreme	0.25	0.25	1.0	1.0	s j ʉː p ɹ iː m
+sweeping	0.99	0.38	0.99	1.01	s w iː p ɪ n
+sweeping	0.67	0.17	1.0	1.0	s w iː pʲ ɪ ŋ
+sweeping	0.67	0.17	1.0	1.0	s w iː pʲ i ŋ ɡ
+sweeping	0.99	0.62	0.99	1.01	s w iː p ɪ ŋ
+than	0.01	0.25	1.0	1.0	ð ə n
+than	0.02	0.38	0.81	1.14	ð ɪ n
+than	0.01	0.25	1.0	1.0	ð æ n
+than	0.01	0.25	1.0	1.0	ð a n
+than	0.23	0.07	1.23	0.84	z æ n
+than	0.24	0.18	0.91	1.05	z ə n
+than	0.12	0.34	0.4	1.32	d̪ ɪ n
+than	0.04	0.21	1.19	0.89	z ɪ n
+than	0.09	0.89	0.91	1.04	d̪ a n
+than	0.99	0.07	0.49	1.21	d̪ ə n
+than	0.05	0.81	1.52	0.42	z a n
+than	0.22	0.02	0.81	1.07	d̪ æ n
+that	0.04	0.24	0.38	1.19	æ
+that	0.99	0.01	1.97	0.59	z a t
+that	0.82	0.01	0.14	1.25	d̪ a t
+that	0.15	0.05	2.0	0.64	z æ
+that	0.09	0.06	0.13	1.3	d̪ æ
+that	0.31	0.99	1.82	0.67	z æ t
+that	0.44	0.99	0.28	1.18	d̪ æ t
+that	0.01	0.41	2.09	0.26	d̪ a
+that	0.01	0.25	1.0	1.0	ð æ t
+that	0.11	0.17	0.25	1.27	æ t
+that	0.01	0.25	1.0	1.0	ð a t
+the	0.02	0.1	0.65	1.07	iː
+the	0.01	0.75	0.89	1.04	ð iː
+the	0.01	0.25	1.0	1.0	ð i
+the	0.01	0.17	0.58	1.19	ð ə
+the	0.07	0.24	1.48	0.91	ə
+the	0.01	0.98	1.15	0.97	d̪ iː
+the	0.01	0.7	1.03	0.98	ð a
+the	0.01	0.5	0.99	1.01	ð e
+the	0.01	0.17	1.18	0.81	z iː
+the	0.99	0.03	1.15	0.98	d̪ ə
+the	0.72	0.06	3.83	0.5	z ə
+the	0.01	0.02	1.35	0.91	d̪ a
+the	0.02	0.18	4.57	0.19	z a
+the	0.05	0.44	0.94	1.01	d̪ e
+the	0.05	0.02	5.46	0.09	z e
+the	0.13	0.01	0.64	1.06	d̪ i
+the	0.12	0.11	5.2	0.25	z i
+these	0.01	0.17	0.94	1.05	ð iː z
+these	0.94	0.14	6.17	0.27	z iː z
+these	0.99	0.11	1.66	0.88	d̪ iː z
+thirty	0.09	0.25	1.0	1.0	θ ɜː tʲ i
+thirty	0.18	0.17	0.91	1.07	θ aː tʰ i
+thirty	0.55	0.36	1.55	0.78	θ ɝ tʲ i
+thirty	0.55	0.07	0.7	1.14	s ɜː ɾʲ i
+thirty	0.36	0.1	1.01	0.99	t̪ ɜː ɾʲ i
+thirty	0.36	0.1	0.78	1.13	s ɜː tʲ i
+thirty	0.99	0.21	1.8	0.69	t̪ ɜː tʲ i
+thirty	0.64	0.06	1.95	0.58	t̪ ɝ ɾʲ i
+thirty	0.55	0.07	0.61	1.23	s ɝ tʲ i
+thomas	0.99	0.25	1.54	0.78	tʰ ɒ m ə s
+thomas	0.12	0.5	1.49	0.67	tʰ ɔ m a s
+thomas	0.65	0.38	2.11	0.72	tʰ ɑ m ə s
+three	0.01	0.25	1.0	1.0	θ ɹ iː
+three	0.51	0.06	1.52	0.87	s ɹ iː
+three	0.99	0.17	2.27	0.72	t̪ ɹ iː
+to	0.99	0.02	0.4	1.16	t ə
+to	0.26	0.28	0.74	1.09	tʰ ʊ
+to	0.04	0.25	0.54	1.12	ə
+to	0.01	0.25	1.0	1.0	tʲ ʉː
+to	0.01	0.25	1.0	1.0	tʰ ʉː
+to	0.02	0.22	0.53	1.19	tʃ uː
+to	0.01	0.06	1.18	0.93	t ɔ
+to	0.89	0.07	0.73	1.09	tʰ uː
+toughest	0.99	0.25	1.0	1.0	tʰ ɐ f s t
+toughest	0.99	0.25	1.0	1.0	tʰ ɐ fʲ ɪ s t
+trial	0.99	0.44	1.57	0.73	t ɹ aj ə ɫ
+trial	0.86	0.5	1.11	0.95	t ɹ aj a ɫ
+u	0.2	0.25	1.0	1.0	ʊ
+u	0.8	0.5	0.9	1.09	j uː
+u	0.2	0.25	1.0	1.0	uː
+u	0.99	0.08	1.17	0.92	j ʉː
+u	0.2	0.25	1.0	1.0	ʉː
+u	0.2	0.25	1.0	1.0	ɐ
+u	0.2	0.25	1.0	1.0	ɔ
+urged	0.99	0.81	1.64	0.75	ɝ dʒ d
+urged	0.17	0.5	0.96	1.03	aː dʒ d
+urged	0.42	0.75	1.53	0.74	ɜː dʒ d
+w	0.5	0.17	1.27	0.76	d ɔ b ʊ ʎ uː
+w	0.25	0.25	1.0	1.0	d ɔ bʲ uː
+w	0.99	0.1	0.65	1.28	d ɔ b ʊ ɫ j uː
+w	0.25	0.25	1.0	1.0	d ɔ b z
+w	0.5	0.17	0.85	1.14	d ɐ bʲ ʉː
+w	0.25	0.25	1.0	1.0	d ɐ b ə ʎ ʉː
+w	0.99	0.3	0.71	1.2	d ɐ b ə ɫ j ʉː
+w	0.25	0.25	1.0	1.0	d ɐ b ə
+w	0.25	0.25	1.0	1.0	d ɐ b z
+w	0.25	0.25	1.0	1.0	d ɐ b
+w	0.25	0.25	1.0	1.0	d ɔ bʲ a
+w	0.25	0.25	1.0	1.0	d ɔ b
+w	0.25	0.25	1.0	1.0	d ɐ bʲ ə
+wanted	0.48	0.08	0.62	1.06	w ɒ ɾ̃ ɪ d
+wanted	0.02	0.25	1.0	1.0	w ɑ n tʲ ɪ d
+wanted	0.02	0.25	1.0	1.0	w ə n ɪ d
+wanted	0.02	0.25	1.0	1.0	w ɔ n t ɛ d
+wanted	0.03	0.17	1.41	0.7	w ɒ ɾ̃ ɪ ɾ
+wanted	0.99	0.24	0.34	1.1	w ɒ n tʲ ɪ d
+was	0.14	0.99	0.69	1.13	w ɒ z
+was	0.74	0.01	0.6	1.15	w ɔ z
+was	0.06	0.44	0.98	1.01	w a z
+was	0.01	0.35	1.28	0.82	w ɐ z
+was	0.99	0.03	0.38	1.17	w ə z
+was	0.71	0.16	0.61	1.14	w ɑ z
+white	0.99	0.53	1.45	0.9	w aj t
+white	0.04	0.62	1.41	0.78	w aj
+widely	0.78	0.19	1.05	0.98	w aj t ʎ i
+widely	0.33	0.12	0.87	1.08	w aj d ʎ i
+widely	0.99	0.05	0.85	1.06	w aj dʲ ʎ i
+will	0.99	0.07	1.93	0.79	w ɪ ɫ
+will	0.99	0.08	0.89	1.02	w ə ɫ
+will	0.15	0.13	1.21	0.95	w i ɫ
+will	0.49	0.03	0.83	1.04	w ɫ̩
+won	0.05	0.5	1.28	0.86	w ɑ n
+won	0.03	0.17	0.93	1.06	w ɐ n
+won	0.01	0.25	1.0	1.0	w ɔ n
+won	0.99	0.22	0.96	1.01	w ɒ n
+year	0.99	0.58	0.53	1.1	j ɪ ɹ
+year	0.2	0.84	1.1	0.96	j i a
+year	0.66	0.53	0.83	1.04	j ɪ ə
+c's	kʰ z
+dukakis	d ɐ cʰ æ c ɪ s
+hennessy's	h ɛ ɲ ɪ s i z
+judgeships	dʒ ɐ dʒ ʃ ɪ p s
+maffy	m æ fʲ i
+melnicove	m ɛ ɫ ɲ ɪ kʰ ow v
+r's	ɹ z
+state's	s t ej t z
+year's	j ɝ z

@@ -1,0 +1,115 @@
+{
+ "run": "speech_mel_cross_speaker_seed0",
+ "pipeline": "speech",
+ "split": "cross_speaker",
+ "seed": 0,
+ "variant": "mel",
+ "test_clips": 1400,
+ "accuracy": 0.5428571428571428,
+ "macro_f1": 0.517200971427662,
+ "best_epoch": 15,
+ "val_macro_f1": 1.0,
+ "per_class": {
+  "angry": {
+   "precision": 0.3734,
+   "recall": 0.715,
+   "f1-score": 0.4906
+  },
+  "disgust": {
+   "precision": 0.3629,
+   "recall": 0.96,
+   "f1-score": 0.5267
+  },
+  "fear": {
+   "precision": 0.9365,
+   "recall": 0.295,
+   "f1-score": 0.4487
+  },
+  "happy": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1-score": 0.0
+  },
+  "neutral": {
+   "precision": 1.0,
+   "recall": 0.43,
+   "f1-score": 0.6014
+  },
+  "pleasant_surprise": {
+   "precision": 0.8052,
+   "recall": 0.62,
+   "f1-score": 0.7006
+  },
+  "sad": {
+   "precision": 0.9398,
+   "recall": 0.78,
+   "f1-score": 0.8525
+  }
+ },
+ "confusion_matrix": [
+  [
+   143,
+   46,
+   0,
+   0,
+   0,
+   10,
+   1
+  ],
+  [
+   0,
+   192,
+   0,
+   0,
+   0,
+   8,
+   0
+  ],
+  [
+   30,
+   97,
+   59,
+   2,
+   0,
+   12,
+   0
+  ],
+  [
+   170,
+   26,
+   0,
+   0,
+   0,
+   0,
+   4
+  ],
+  [
+   0,
+   112,
+   0,
+   0,
+   86,
+   0,
+   2
+  ],
+  [
+   40,
+   16,
+   0,
+   17,
+   0,
+   124,
+   3
+  ],
+  [
+   0,
+   40,
+   4,
+   0,
+   0,
+   0,
+   156
+  ]
+ ],
+ "layer_weights": {}
+}

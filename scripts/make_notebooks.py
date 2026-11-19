@@ -2,6 +2,9 @@
 
     python scripts/make_notebooks.py
 
+The notebooks committed in colab/ are the executed copies the Colab runs saved, with every output and cell
+time. Running this script replaces them with blank ones.
+
 Both notebooks are built to run unattended with Run all.
 * The first cell starts a session log. Every cell prints and records the IST time it finished and how long it
   took (session_logs/cell_times.csv), and run() prefixes every output line with the time and keeps a copy
@@ -159,10 +162,11 @@ if not token:
         token = userdata.get("HF_TOKEN") or ""
     except Exception:
         token = ""
-while not can_write(token):                        # checked now, not after an hour of training
-    if token:
-        log(f"this Hugging Face token cannot write to {DATA_REPO}")
+if not token:
     token = getpass.getpass("Hugging Face token with write access ").strip()
+if not can_write(token):                           # checked now, not after an hour of training
+    raise PermissionError(f"this Hugging Face token has no write access to {DATA_REPO}, use a token with write "
+                          "access (and update or delete the HF_TOKEN Colab secret if there is one)")
 os.environ["HF_TOKEN"] = token
 log(f"logged in to Hugging Face as {whoami()['name']}, with write access to {DATA_REPO}")
 

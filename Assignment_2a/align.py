@@ -9,7 +9,8 @@ prepare        converts the audio to 16 kHz RIFF WAV (three clips are NIST SPHER
                a normalised .lab transcript next to each clip, one folder per speaker
 dictionaries   builds three pronunciation dictionaries for the corpus vocabulary
                arpa      english_us_arpa dictionary, missing words from the english_us_arpa G2P model
-               g2p_en    every word from g2p_en (CMUdict variants, neural G2P otherwise), as in Assignment 1
+               g2p_en    CMUdict through g2p_en (every variant), its neural G2P for missing words, as in my earlier
+                         FastSpeech 2 assignment
                mfa_ipa   english_mfa dictionary, missing words from the english_us_mfa G2P model
 align          runs MFA once per configuration in RUNS, including an english_us_arpa model adapted to
                this corpus, and writes TextGrids to outputs/textgrids/<run>/
@@ -231,7 +232,7 @@ def dict_with_g2p(words, dict_name, g2p_name, out_path):
 
 
 def dict_g2p_en(words, out_path):
-    """The Assignment 1 lexicon builder. CMUdict words get all their variants and MFA picks one per
+    """The lexicon builder from my earlier FastSpeech 2 assignment. CMUdict words get all their variants and MFA picks one per
     token, other words get the g2p_en neural prediction."""
     from g2p_en import G2p
     g2p = G2p()
@@ -308,7 +309,7 @@ def speech(intervals):
 def check_clip(tiers, expected_words, frame_floor=0.031):
     """Alignment checks for one clip.
 
-    Every MFA phone lasts at least 3 frames of 10 ms, so a phone at that floor was squeezed into the
+    MFA phones usually last at least 3 frames of 10 ms, so a phone at that floor was squeezed into the
     shortest time the HMM allows, which often means the phone was not pronounced (a skipped phoneme).
     A very long speech phone usually absorbs a pause or a disfluency. Words that do not match the
     transcript, or spn phones, mean a word was not modelled at all.
@@ -339,9 +340,12 @@ def boundaries(tiers, tier):
 
 
 def compare(ref, other, tier):
+    """Boundary differences in ms. Phones are compared only when both runs use the same phone set."""
     a, b = boundaries(ref, tier), boundaries(other, tier)
     if len(a) != len(b) or not len(a):
         return None
+    if tier == "phones" and not {p for _, _, p in speech(ref[tier])} & {p for _, _, p in speech(other[tier])}:
+        return None                         # ARPAbet and MFA IPA share no phone labels
     d = np.abs(a - b).ravel() * 1000
     return {"n_boundaries": int(d.size), "mean_ms": round(float(d.mean()), 1), "median_ms": round(float(np.median(d)), 1),
             "max_ms": round(float(d.max()), 1), "pct_over_20ms": round(100 * float((d > 20).mean()), 1),
@@ -404,7 +408,7 @@ def write_markdown(runs, corpus, checks, comparison):
     L += ["| clip | speaker | duration (s) | words |", "|---|---|---|---|"]
     L += ["| {} | {} | {} | {} |".format(c, v["speaker"], v["duration_s"], v["n_words"]) for c, v in corpus.items()]
     L += ["", "## Checks per run", ""]
-    L += ["| run | clip | words match | phones | at 30 ms floor | over 250 ms | inner pauses (s) | phones/s | speech log likelihood |",
+    L += ["| run | clip | words match | phones | 30 ms or less | over 250 ms | inner pauses (s) | phones/s | speech log likelihood |",
           "|---|---|---|---|---|---|---|---|---|"]
     for run in runs:
         for clip, c in checks[run].items():

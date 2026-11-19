@@ -1,0 +1,56 @@
+{
+ "arpa": {
+  "words": 151,
+  "in_pretrained_dictionary": 147,
+  "oov": [
+   "dukakis",
+   "maffy",
+   "melnicove",
+   "politicize"
+  ],
+  "g2p_pronunciations": [
+   "dukakis\tD UW1 K AA1 K IH0 S",
+   "maffy\tM AE1 F IY0",
+   "melnicove\tM EH1 L N IH0 K OW2 V",
+   "politicize\tP AH0 L IH1 T IH0 S AY2 Z"
+  ],
+  "entries": 255
+ },
+ "g2p_en": {
+  "words": 151,
+  "in_cmudict": 148,
+  "predicted": {
+   "hennessy's": "HH EH1 N AH0 S IY0 Z",
+   "maffy": "M AE1 F IY0",
+   "melnicove": "M EH1 L N IH0 K OW2 V"
+  },
+  "entries": 221
+ },
+ "mfa_ipa": {
+  "words": 151,
+  "in_pretrained_dictionary": 142,
+  "oov": [
+   "c's",
+   "dukakis",
+   "hennessy's",
+   "judgeships",
+   "maffy",
+   "melnicove",
+   "r's",
+   "state's",
+   "year's"
+  ],
+  "g2p_pronunciations": [
+   "c's\tk\u02b0 z",
+   "dukakis\td \u0250 c\u02b0 \u00e6 c \u026a s",
+   "hennessy's\th \u025b \u0272 \u026a s i z",
+   "judgeships\td\u0292 \u0250 d\u0292 \u0283 \u026a p s",
+   "maffy\tm \u00e6 f\u02b2 i",
+   "melnicove\tm \u025b \u026b \u0272 \u026a k\u02b0 ow v",
+   "r's\t\u0279 z",
+   "state's\ts t ej t z",
+   "year's\tj \u025d z"
+  ],
+  "entries": 571
+ }
+}

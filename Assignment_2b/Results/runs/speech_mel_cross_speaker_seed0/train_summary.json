@@ -1,0 +1,24 @@
+{
+ "run": "speech_mel_cross_speaker_seed0",
+ "args": {
+  "split": "cross_speaker",
+  "features": "mel",
+  "seed": 0,
+  "epochs": 40,
+  "patience": 10,
+  "batch_size": 32,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.05,
+  "num_workers": 0,
+  "limit": 0,
+  "pipeline": "speech"
+ },
+ "best_epoch": 15,
+ "best_val_macro_f1": 1.0,
+ "parameters": 1289480,
+ "train_clips": 1190,
+ "val_clips": 210,
+ "minutes": 0.9,
+ "layer_weights": {}
+}

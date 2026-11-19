@@ -1,0 +1,24 @@
+[2026-11-18 18:16:09 IST] session started, A2b, everything is saved and the runtime deleted at the end, after an error or after 6 h
+[2026-11-18 18:16:12 IST] logged in to Hugging Face as gsri-18, with write access to gsri-18/ltrc-a2-data
+[2026-11-18 18:16:40 IST] Google Drive mounted, copies go to MyDrive/LTRC_Assignment2/A2b
+[2026-11-18 18:16:47 IST] Python 3.13.16, PyTorch 2.14.1+cu130, CUDA 13.0, 12 CPU cores
+[2026-11-18 18:16:51 IST] code.zip -> /content/project
+[2026-11-18 18:16:55 IST] TESS.zip -> /content/project/Assignment_2b/data
+[2026-11-18 18:16:55 IST] code version b8e0c73
+[2026-11-18 18:17:00 IST] transformers 5.22.1, librosa 0.11.0, scikit-learn 1.6.1
+[2026-11-18 18:17:10 IST] restored 21 finished runs
+[2026-11-18 18:17:10 IST] $ /usr/bin/python3 scripts/prepare_tess.py
+[2026-11-18 18:17:11 IST] $ /usr/bin/python3 -W ignore -m models.common.features --kind wav
+[2026-11-18 18:17:47 IST] $ /usr/bin/python3 -W ignore -m models.common.features --kind mel
+[2026-11-18 18:18:04 IST] $ /usr/bin/python3 -W ignore -m models.common.features --kind wavlm
+[2026-11-18 18:19:43 IST] $ /usr/bin/python3 -W ignore -m models.common.features --kind bert --text_source gt
+[2026-11-18 18:20:05 IST] $ /usr/bin/python3 -W ignore scripts/transcribe_whisper.py
+[2026-11-18 18:22:24 IST] $ /usr/bin/python3 -W ignore -m models.common.features --kind bert --text_source asr
+[2026-11-18 18:22:41 IST] $ /usr/bin/python3 scripts/run_experiments.py --split word --seeds 0 1 2
+[2026-11-18 18:23:08 IST] uploaded results/A2b_results.zip (146.8 MB), copied to Drive
+[2026-11-18 18:23:08 IST] $ /usr/bin/python3 scripts/run_experiments.py --split cross_speaker --seeds 0 1 2
+[2026-11-18 18:49:31 IST] uploaded results/A2b_results.zip (306.6 MB), copied to Drive
+[2026-11-18 18:49:31 IST] $ /usr/bin/python3 -W ignore scripts/analyse.py
+[2026-11-18 18:50:50 IST] uploaded results/A2b_results.zip (310.1 MB), copied to Drive
+[2026-11-18 18:50:50 IST] notebook completed after 34.7 min, saving
+[2026-11-18 18:50:52 IST] exported the notebook with its outputs (19 cells)

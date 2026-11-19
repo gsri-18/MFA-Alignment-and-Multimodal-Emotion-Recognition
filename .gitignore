@@ -14,3 +14,12 @@ Assignment_2a/mfa_tmp/
 Assignment_2a/outputs/models/
 Assignment_2b/cache/
 Assignment_2b/checkpoints/
+
+# LaTeX build files
+Report/*.aux
+Report/*.log
+Report/*.out
+Report/*.fls
+Report/*.fdb_latexmk
+Report/*.xdv
+Report/*.toc

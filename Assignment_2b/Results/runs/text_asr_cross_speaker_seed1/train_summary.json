@@ -1,0 +1,40 @@
+{
+ "run": "text_asr_cross_speaker_seed1",
+ "args": {
+  "split": "cross_speaker",
+  "text_source": "asr",
+  "seed": 1,
+  "epochs": 40,
+  "patience": 10,
+  "batch_size": 32,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.05,
+  "num_workers": 0,
+  "limit": 0,
+  "pipeline": "text"
+ },
+ "best_epoch": 25,
+ "best_val_macro_f1": 0.18869525442473772,
+ "parameters": 1319957,
+ "train_clips": 1190,
+ "val_clips": 210,
+ "minutes": 0.59,
+ "layer_weights": {
+  "text": [
+   0.086,
+   0.0862,
+   0.087,
+   0.0833,
+   0.0798,
+   0.0783,
+   0.0742,
+   0.0714,
+   0.0714,
+   0.0702,
+   0.0706,
+   0.0703,
+   0.0711
+  ]
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "run": "fusion_wavlm-gt-concat_cross_speaker_seed1",
+ "args": {
+  "split": "cross_speaker",
+  "features": "wavlm",
+  "text_source": "gt",
+  "fusion": "concat",
+  "modality_dropout": 0.0,
+  "seed": 1,
+  "epochs": 40,
+  "patience": 10,
+  "batch_size": 32,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.05,
+  "num_workers": 0,
+  "limit": 0,
+  "pipeline": "fusion"
+ },
+ "best_epoch": 6,
+ "best_val_macro_f1": 0.9952367721192396,
+ "parameters": 2473251,
+ "train_clips": 1190,
+ "val_clips": 210,
+ "minutes": 1.35,
+ "layer_weights": {
+  "speech": [
+   0.0844,
+   0.0829,
+   0.0854,
+   0.0858,
+   0.0808,
+   0.0813,
+   0.0782,
+   0.0735,
+   0.0713,
+   0.0681,
+   0.0687,
+   0.0704,
+   0.0691
+  ],
+  "text": [
+   0.0771,
+   0.0763,
+   0.0766,
+   0.0791,
+   0.0789,
+   0.0788,
+   0.0786,
+   0.0774,
+   0.0762,
+   0.0753,
+   0.0748,
+   0.0752,
+   0.0757
+  ]
+ }
+}

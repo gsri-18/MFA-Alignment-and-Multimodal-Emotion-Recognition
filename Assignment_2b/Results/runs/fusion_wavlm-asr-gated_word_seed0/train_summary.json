@@ -1,0 +1,58 @@
+{
+ "run": "fusion_wavlm-asr-gated_word_seed0",
+ "args": {
+  "split": "word",
+  "features": "wavlm",
+  "text_source": "asr",
+  "fusion": "gated",
+  "modality_dropout": 0.0,
+  "seed": 0,
+  "epochs": 40,
+  "patience": 10,
+  "batch_size": 32,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.05,
+  "num_workers": 0,
+  "limit": 0,
+  "pipeline": "fusion"
+ },
+ "best_epoch": 5,
+ "best_val_macro_f1": 1.0,
+ "parameters": 2604835,
+ "train_clips": 1960,
+ "val_clips": 420,
+ "minutes": 2.25,
+ "layer_weights": {
+  "speech": [
+   0.087,
+   0.0827,
+   0.0836,
+   0.0855,
+   0.0829,
+   0.0809,
+   0.0761,
+   0.0755,
+   0.0723,
+   0.0702,
+   0.0678,
+   0.0681,
+   0.0677
+  ],
+  "text": [
+   0.0778,
+   0.0775,
+   0.0774,
+   0.0772,
+   0.0773,
+   0.077,
+   0.0766,
+   0.0762,
+   0.0765,
+   0.0765,
+   0.0767,
+   0.0766,
+   0.0767
+  ]
+ }
+}

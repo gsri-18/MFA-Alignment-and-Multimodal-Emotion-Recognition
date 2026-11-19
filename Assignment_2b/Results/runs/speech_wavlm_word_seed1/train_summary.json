@@ -1,0 +1,40 @@
+{
+ "run": "speech_wavlm_word_seed1",
+ "args": {
+  "split": "word",
+  "features": "wavlm",
+  "seed": 1,
+  "epochs": 40,
+  "patience": 10,
+  "batch_size": 32,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.05,
+  "num_workers": 0,
+  "limit": 0,
+  "pipeline": "speech"
+ },
+ "best_epoch": 3,
+ "best_val_macro_f1": 1.0,
+ "parameters": 1056277,
+ "train_clips": 1960,
+ "val_clips": 420,
+ "minutes": 1.67,
+ "layer_weights": {
+  "speech": [
+   0.0887,
+   0.0873,
+   0.0881,
+   0.0872,
+   0.0812,
+   0.079,
+   0.0752,
+   0.0738,
+   0.0698,
+   0.0671,
+   0.067,
+   0.068,
+   0.0677
+  ]
+ }
+}

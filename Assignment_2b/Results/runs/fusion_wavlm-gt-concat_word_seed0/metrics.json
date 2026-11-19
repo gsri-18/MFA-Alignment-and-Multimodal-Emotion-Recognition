@@ -1,0 +1,146 @@
+{
+ "run": "fusion_wavlm-gt-concat_word_seed0",
+ "pipeline": "fusion",
+ "split": "word",
+ "seed": 0,
+ "variant": "wavlm-gt-concat",
+ "test_clips": 420,
+ "accuracy": 1.0,
+ "macro_f1": 1.0,
+ "best_epoch": 7,
+ "val_macro_f1": 0.9976188822636493,
+ "per_class": {
+  "angry": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1-score": 1.0
+  },
+  "disgust": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1-score": 1.0
+  },
+  "fear": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1-score": 1.0
+  },
+  "happy": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1-score": 1.0
+  },
+  "neutral": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1-score": 1.0
+  },
+  "pleasant_surprise": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1-score": 1.0
+  },
+  "sad": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1-score": 1.0
+  }
+ },
+ "confusion_matrix": [
+  [
+   60,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   60,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   60,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   60,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   60,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   60,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   60
+  ]
+ ],
+ "layer_weights": {
+  "speech": [
+   0.0889,
+   0.0876,
+   0.0844,
+   0.0866,
+   0.081,
+   0.0821,
+   0.0757,
+   0.0725,
+   0.0707,
+   0.0671,
+   0.0675,
+   0.0682,
+   0.0676
+  ],
+  "text": [
+   0.0769,
+   0.0764,
+   0.0766,
+   0.0789,
+   0.0787,
+   0.0788,
+   0.0781,
+   0.0775,
+   0.0765,
+   0.0756,
+   0.0752,
+   0.0752,
+   0.0758
+  ]
+ }
+}

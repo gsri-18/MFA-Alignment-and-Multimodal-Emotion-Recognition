@@ -1,0 +1,156 @@
+{
+ "run": "fusion_wavlm-gt-gated_word_seed1",
+ "pipeline": "fusion",
+ "split": "word",
+ "seed": 1,
+ "variant": "wavlm-gt-gated",
+ "test_clips": 420,
+ "accuracy": 1.0,
+ "macro_f1": 1.0,
+ "best_epoch": 8,
+ "val_macro_f1": 1.0,
+ "per_class": {
+  "angry": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1-score": 1.0
+  },
+  "disgust": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1-score": 1.0
+  },
+  "fear": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1-score": 1.0
+  },
+  "happy": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1-score": 1.0
+  },
+  "neutral": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1-score": 1.0
+  },
+  "pleasant_surprise": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1-score": 1.0
+  },
+  "sad": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1-score": 1.0
+  }
+ },
+ "confusion_matrix": [
+  [
+   60,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   60,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   60,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   60,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   60,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   60,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   60
+  ]
+ ],
+ "layer_weights": {
+  "speech": [
+   0.0858,
+   0.0857,
+   0.0868,
+   0.0855,
+   0.0841,
+   0.0795,
+   0.0761,
+   0.0732,
+   0.0701,
+   0.0687,
+   0.0687,
+   0.0682,
+   0.0675
+  ],
+  "text": [
+   0.0768,
+   0.0768,
+   0.0769,
+   0.0769,
+   0.0769,
+   0.077,
+   0.077,
+   0.0769,
+   0.0771,
+   0.0769,
+   0.0769,
+   0.0769,
+   0.0769
+  ]
+ },
+ "gate_mean": 0.972,
+ "gate_mean_per_emotion": {
+  "angry": 0.9709,
+  "disgust": 0.9716,
+  "fear": 0.9727,
+  "happy": 0.9758,
+  "neutral": 0.9667,
+  "pleasant_surprise": 0.9704,
+  "sad": 0.9762
+ }
+}

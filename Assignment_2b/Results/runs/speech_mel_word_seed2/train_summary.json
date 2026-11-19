@@ -1,0 +1,24 @@
+{
+ "run": "speech_mel_word_seed2",
+ "args": {
+  "split": "word",
+  "features": "mel",
+  "seed": 2,
+  "epochs": 40,
+  "patience": 10,
+  "batch_size": 32,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.05,
+  "num_workers": 0,
+  "limit": 0,
+  "pipeline": "speech"
+ },
+ "best_epoch": 8,
+ "best_val_macro_f1": 1.0,
+ "parameters": 1289480,
+ "train_clips": 1960,
+ "val_clips": 420,
+ "minutes": 1.04,
+ "layer_weights": {}
+}

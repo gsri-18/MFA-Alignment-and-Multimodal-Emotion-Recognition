@@ -1,4 +1,4 @@
-# Python 3.11
+# Tested on Colab with Python 3.13.16, torch 2.14.1, transformers 5.22.1, librosa 0.11.0, scikit-learn 1.6.1
 torch>=2.5
 transformers>=4.56      # WavLM, BERT and the Whisper pipeline (the dtype argument needs 4.56)
 numpy>=1.26

@@ -1,0 +1,58 @@
+{
+ "run": "fusion_wavlm-asr-gated_cross_speaker_seed1",
+ "args": {
+  "split": "cross_speaker",
+  "features": "wavlm",
+  "text_source": "asr",
+  "fusion": "gated",
+  "modality_dropout": 0.0,
+  "seed": 1,
+  "epochs": 40,
+  "patience": 10,
+  "batch_size": 32,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.05,
+  "num_workers": 0,
+  "limit": 0,
+  "pipeline": "fusion"
+ },
+ "best_epoch": 6,
+ "best_val_macro_f1": 1.0,
+ "parameters": 2604835,
+ "train_clips": 1190,
+ "val_clips": 210,
+ "minutes": 1.47,
+ "layer_weights": {
+  "speech": [
+   0.0869,
+   0.0907,
+   0.0918,
+   0.0911,
+   0.0857,
+   0.0834,
+   0.0751,
+   0.0665,
+   0.0663,
+   0.0649,
+   0.0656,
+   0.0665,
+   0.0654
+  ],
+  "text": [
+   0.0778,
+   0.0774,
+   0.0776,
+   0.0777,
+   0.0772,
+   0.0774,
+   0.0766,
+   0.0759,
+   0.0764,
+   0.0766,
+   0.0767,
+   0.0763,
+   0.0764
+  ]
+ }
+}

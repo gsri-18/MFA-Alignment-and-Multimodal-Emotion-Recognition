@@ -1,5 +1,5 @@
 # Python 3.11. Montreal Forced Aligner comes from conda-forge
-#   conda create -n mfa -c conda-forge python=3.11 montreal-forced-aligner=3
+#   conda create -n mfa -c conda-forge python=3.11 montreal-forced-aligner=3.4.4
 #   conda activate mfa && pip install -r requirements.txt
 numpy>=1.26
 soundfile>=0.12

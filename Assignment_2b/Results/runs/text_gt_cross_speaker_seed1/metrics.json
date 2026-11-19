@@ -1,0 +1,131 @@
+{
+ "run": "text_gt_cross_speaker_seed1",
+ "pipeline": "text",
+ "split": "cross_speaker",
+ "seed": 1,
+ "variant": "gt",
+ "test_clips": 1400,
+ "accuracy": 0.14285714285714285,
+ "macro_f1": 0.03571428571428571,
+ "best_epoch": 1,
+ "val_macro_f1": 0.03571428571428571,
+ "per_class": {
+  "angry": {
+   "precision": 0.1429,
+   "recall": 1.0,
+   "f1-score": 0.25
+  },
+  "disgust": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1-score": 0.0
+  },
+  "fear": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1-score": 0.0
+  },
+  "happy": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1-score": 0.0
+  },
+  "neutral": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1-score": 0.0
+  },
+  "pleasant_surprise": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1-score": 0.0
+  },
+  "sad": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1-score": 0.0
+  }
+ },
+ "confusion_matrix": [
+  [
+   200,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   200,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   200,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   200,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   200,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   200,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   200,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ ],
+ "layer_weights": {
+  "text": [
+   0.0769,
+   0.0769,
+   0.0769,
+   0.077,
+   0.077,
+   0.0769,
+   0.077,
+   0.077,
+   0.0769,
+   0.0769,
+   0.0769,
+   0.0769,
+   0.0769
+  ]
+ }
+}

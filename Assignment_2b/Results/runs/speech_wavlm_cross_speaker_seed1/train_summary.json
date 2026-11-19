@@ -1,0 +1,40 @@
+{
+ "run": "speech_wavlm_cross_speaker_seed1",
+ "args": {
+  "split": "cross_speaker",
+  "features": "wavlm",
+  "seed": 1,
+  "epochs": 40,
+  "patience": 10,
+  "batch_size": 32,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.05,
+  "num_workers": 0,
+  "limit": 0,
+  "pipeline": "speech"
+ },
+ "best_epoch": 3,
+ "best_val_macro_f1": 1.0,
+ "parameters": 1056277,
+ "train_clips": 1190,
+ "val_clips": 210,
+ "minutes": 1.01,
+ "layer_weights": {
+  "speech": [
+   0.0833,
+   0.0823,
+   0.0834,
+   0.0826,
+   0.0799,
+   0.0795,
+   0.0765,
+   0.074,
+   0.0722,
+   0.0709,
+   0.0711,
+   0.0714,
+   0.073
+  ]
+ }
+}

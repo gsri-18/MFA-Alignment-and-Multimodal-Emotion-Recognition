@@ -1,0 +1,11 @@
+finished_ist,seconds,status,first_line
+2026-11-17 23:54:25,-0.0,ok,"session setup"
+2026-11-17 23:54:52,27.3,ok,"import getpass, requests"
+2026-11-17 23:55:06,13.7,ok,"import zipfile"
+2026-11-17 23:57:05,119.1,ok,"%cd /content"
+2026-11-17 23:57:06,0.7,ok,"%cd /content/project/Assignment_2a"
+2026-11-17 23:57:38,32.2,ok,"run(f'{PY} align.py --stage dictionaries', drop=r'it/s|━')"
+2026-11-18 00:01:11,212.6,ok,"run(f'{PY} align.py --stage align --num_jobs {os.cpu_count()}', keep=r'^\$|INFO|TextGrids|"
+2026-11-18 00:01:11,0.4,ok,"run(f'{PY} align.py --stage analyse')"
+2026-11-18 00:01:42,30.8,ok,"run(f'{PY} align.py --stage plot')"
+2026-11-18 00:01:46,4.1,ok,"from huggingface_hub import HfApi"

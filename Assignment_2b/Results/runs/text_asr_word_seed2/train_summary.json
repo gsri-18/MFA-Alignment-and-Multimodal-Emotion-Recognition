@@ -1,0 +1,40 @@
+{
+ "run": "text_asr_word_seed2",
+ "args": {
+  "split": "word",
+  "text_source": "asr",
+  "seed": 2,
+  "epochs": 40,
+  "patience": 10,
+  "batch_size": 32,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.05,
+  "num_workers": 0,
+  "limit": 0,
+  "pipeline": "text"
+ },
+ "best_epoch": 35,
+ "best_val_macro_f1": 0.15299069460560144,
+ "parameters": 1319957,
+ "train_clips": 1960,
+ "val_clips": 420,
+ "minutes": 1.07,
+ "layer_weights": {
+  "text": [
+   0.0803,
+   0.0815,
+   0.0831,
+   0.0808,
+   0.0808,
+   0.0792,
+   0.0781,
+   0.076,
+   0.0744,
+   0.0717,
+   0.0722,
+   0.0709,
+   0.071
+  ]
+ }
+}

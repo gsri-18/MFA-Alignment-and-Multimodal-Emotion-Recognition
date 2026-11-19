@@ -1,0 +1,131 @@
+{
+ "run": "speech_wavlm_cross_speaker_seed0",
+ "pipeline": "speech",
+ "split": "cross_speaker",
+ "seed": 0,
+ "variant": "wavlm",
+ "test_clips": 1400,
+ "accuracy": 0.73,
+ "macro_f1": 0.6883056301932625,
+ "best_epoch": 4,
+ "val_macro_f1": 1.0,
+ "per_class": {
+  "angry": {
+   "precision": 0.3165,
+   "recall": 0.375,
+   "f1-score": 0.3432
+  },
+  "disgust": {
+   "precision": 0.8485,
+   "recall": 0.98,
+   "f1-score": 0.9095
+  },
+  "fear": {
+   "precision": 0.678,
+   "recall": 1.0,
+   "f1-score": 0.8081
+  },
+  "happy": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1-score": 0.0
+  },
+  "neutral": {
+   "precision": 0.885,
+   "recall": 1.0,
+   "f1-score": 0.939
+  },
+  "pleasant_surprise": {
+   "precision": 1.0,
+   "recall": 0.8,
+   "f1-score": 0.8889
+  },
+  "sad": {
+   "precision": 0.9052,
+   "recall": 0.955,
+   "f1-score": 0.9294
+  }
+ },
+ "confusion_matrix": [
+  [
+   75,
+   35,
+   51,
+   0,
+   26,
+   0,
+   13
+  ],
+  [
+   0,
+   196,
+   0,
+   0,
+   0,
+   0,
+   4
+  ],
+  [
+   0,
+   0,
+   200,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   162,
+   0,
+   35,
+   0,
+   0,
+   0,
+   3
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   200,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   40,
+   0,
+   160,
+   0
+  ],
+  [
+   0,
+   0,
+   9,
+   0,
+   0,
+   0,
+   191
+  ]
+ ],
+ "layer_weights": {
+  "speech": [
+   0.0805,
+   0.0796,
+   0.0797,
+   0.0804,
+   0.0784,
+   0.0781,
+   0.0769,
+   0.0759,
+   0.0736,
+   0.0737,
+   0.0745,
+   0.0742,
+   0.0745
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+[2026-11-17 23:54:25 IST] session started, A2a, everything is saved and the runtime deleted at the end, after an error or after 1.5 h
+[2026-11-17 23:54:28 IST] logged in to Hugging Face as gsri-18, with write access to gsri-18/ltrc-a2-data
+[2026-11-17 23:54:52 IST] Google Drive mounted, copies go to MyDrive/LTRC_Assignment2/A2a
+[2026-11-17 23:54:54 IST] code.zip -> /content/project
+[2026-11-17 23:54:57 IST] A2a_data.zip -> /content/project/Assignment_2a
+[2026-11-17 23:54:57 IST] code version b8e0c73
+[2026-11-17 23:55:06 IST] $ curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xj bin/micromamba
+[2026-11-17 23:55:08 IST] $ ./bin/micromamba create -q -y -p /content/mfa_env -c conda-forge python=3.11 montreal-forced-aligner=3
+[2026-11-17 23:57:03 IST] $ mfa version
+[2026-11-17 23:57:05 IST] $ /usr/bin/python3 align.py --stage prepare
+[2026-11-17 23:57:06 IST] $ /usr/bin/python3 align.py --stage dictionaries
+[2026-11-17 23:57:38 IST] $ /usr/bin/python3 align.py --stage align --num_jobs 2
+[2026-11-18 00:01:11 IST] $ /usr/bin/python3 align.py --stage analyse
+[2026-11-18 00:01:11 IST] $ /usr/bin/python3 align.py --stage plot
+[2026-11-18 00:01:43 IST] A2a_outputs.zip 5.2 MB
+[2026-11-18 00:01:46 IST] uploaded results/A2a_outputs.zip
+[2026-11-18 00:01:46 IST] notebook completed after 7.4 min, saving
+[2026-11-18 00:01:49 IST] exported the notebook with its outputs (21 cells)

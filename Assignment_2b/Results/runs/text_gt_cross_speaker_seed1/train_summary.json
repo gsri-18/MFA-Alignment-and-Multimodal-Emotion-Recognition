@@ -1,0 +1,40 @@
+{
+ "run": "text_gt_cross_speaker_seed1",
+ "args": {
+  "split": "cross_speaker",
+  "text_source": "gt",
+  "seed": 1,
+  "epochs": 40,
+  "patience": 10,
+  "batch_size": 32,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.05,
+  "num_workers": 0,
+  "limit": 0,
+  "pipeline": "text"
+ },
+ "best_epoch": 1,
+ "best_val_macro_f1": 0.03571428571428571,
+ "parameters": 1319957,
+ "train_clips": 1190,
+ "val_clips": 210,
+ "minutes": 0.13,
+ "layer_weights": {
+  "text": [
+   0.0767,
+   0.0767,
+   0.0769,
+   0.077,
+   0.077,
+   0.0768,
+   0.077,
+   0.0772,
+   0.077,
+   0.0769,
+   0.0769,
+   0.077,
+   0.0768
+  ]
+ }
+}

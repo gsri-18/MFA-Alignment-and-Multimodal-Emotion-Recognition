@@ -5,7 +5,7 @@
 TESS has 2 speakers (OAF, aged 64, and YAF, aged 26) who each say the carrier phrase "Say the word ..."
 with 200 target words in 7 emotions, 2,800 clips in all. The Kaggle copy holds every file twice (a
 nested duplicate folder), so files are deduplicated by name. Speaker and emotion come from the folder
-name, since two files are named OA_ instead of OAF_.
+name, since one file is named OA_ instead of OAF_.
 
 Writes data/manifest.csv (one row per clip) and data/splits.json with two splits
 word            word disjoint. The 200 words are split 140 / 30 / 30 into train, val and test, and

@@ -1,0 +1,213 @@
+
+[2026-11-18 18:17:10 IST] $ /usr/bin/python3 scripts/prepare_tess.py
+[18:17:11] word {'train': 1960, 'val': 420, 'test': 420}
+[18:17:11] cross_speaker {'train': 1190, 'val': 210, 'test': 1400}
+[18:17:11] sample rates {24414: 2799, 96000: 1}
+
+[2026-11-18 18:17:11 IST] $ /usr/bin/python3 -W ignore -m models.common.features --kind wav
+[18:17:44] trimmed durations min 1.12, median 2.01, max 2.98 s
+[18:17:44] done wav 2800 clips -> /content/project/Assignment_2b/cache/wav
+
+[2026-11-18 18:17:47 IST] $ /usr/bin/python3 -W ignore -m models.common.features --kind mel
+[18:18:03] done mel 2800 clips -> /content/project/Assignment_2b/cache/mel
+
+[2026-11-18 18:18:04 IST] $ /usr/bin/python3 -W ignore -m models.common.features --kind wavlm
+[18:18:29] wavlm 1/2800
+[18:18:43] wavlm 501/2800
+[18:18:55] wavlm 1001/2800
+[18:19:08] wavlm 1501/2800
+[18:19:20] wavlm 2001/2800
+[18:19:33] wavlm 2501/2800
+[18:19:40] done wavlm 2800 clips -> /content/project/Assignment_2b/cache/wavlm
+
+[2026-11-18 18:19:43 IST] $ /usr/bin/python3 -W ignore -m models.common.features --kind bert --text_source gt
+[18:20:00] [transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+[18:20:00] Key                                        | Status     |  | 
+[18:20:00] -------------------------------------------+------------+--+-
+[18:20:00] Notes:
+[18:20:04] text_source gt, for example ['[CLS]', 'say', 'the', 'word', 'back', '[SEP]']
+[18:20:04] done bert 2800 clips -> /content/project/Assignment_2b/cache/bert_gt
+
+[2026-11-18 18:20:05 IST] $ /usr/bin/python3 -W ignore scripts/transcribe_whisper.py
+[18:22:23] word error rate 8.34% over 2800 clips
+[18:22:23] OAF_back_angry -> Say the word back.
+[18:22:23] OAF_back_disgust -> Say the word back.
+[18:22:23] OAF_back_fear -> Say the word back.
+[18:22:23] OAF_back_happy -> Say the word back.
+[18:22:23] OAF_back_neutral -> Say the word back.
+
+[2026-11-18 18:22:24 IST] $ /usr/bin/python3 -W ignore -m models.common.features --kind bert --text_source asr
+[18:22:33] [transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+[18:22:33] Key                                        | Status     |  | 
+[18:22:33] -------------------------------------------+------------+--+-
+[18:22:33] Notes:
+[18:22:40] text_source asr, for example ['[CLS]', 'say', 'the', 'word', 'back', '.', '[SEP]']
+[18:22:40] done bert 2800 clips -> /content/project/Assignment_2b/cache/bert_asr
+
+[2026-11-18 18:22:41 IST] $ /usr/bin/python3 scripts/run_experiments.py --split word --seeds 0 1 2
+[18:22:41] skip speech_wavlm_word_seed0 (already tested)
+[18:22:41] skip speech_mel_word_seed0 (already tested)
+[18:22:41] skip text_gt_word_seed0 (already tested)
+[18:22:41] skip text_asr_word_seed0 (already tested)
+[18:22:41] skip fusion_wavlm-gt-gated_word_seed0 (already tested)
+[18:22:41] skip fusion_wavlm-asr-gated_word_seed0 (already tested)
+[18:22:41] skip fusion_wavlm-gt-concat_word_seed0 (already tested)
+[18:22:41] skip speech_wavlm_word_seed1 (already tested)
+[18:22:41] skip speech_mel_word_seed1 (already tested)
+[18:22:41] skip text_gt_word_seed1 (already tested)
+[18:22:41] skip text_asr_word_seed1 (already tested)
+[18:22:41] skip fusion_wavlm-gt-gated_word_seed1 (already tested)
+[18:22:41] skip fusion_wavlm-asr-gated_word_seed1 (already tested)
+[18:22:41] skip fusion_wavlm-gt-concat_word_seed1 (already tested)
+[18:22:41] skip speech_wavlm_word_seed2 (already tested)
+[18:22:41] skip speech_mel_word_seed2 (already tested)
+[18:22:41] skip text_gt_word_seed2 (already tested)
+[18:22:41] skip text_asr_word_seed2 (already tested)
+[18:22:41] skip fusion_wavlm-gt-gated_word_seed2 (already tested)
+[18:22:41] skip fusion_wavlm-asr-gated_word_seed2 (already tested)
+[18:22:41] skip fusion_wavlm-gt-concat_word_seed2 (already tested)
+[18:22:41] all done in 0.0 min
+
+[2026-11-18 18:23:08 IST] $ /usr/bin/python3 scripts/run_experiments.py --split cross_speaker --seeds 0 1 2
+[18:24:28] speech_wavlm_cross_speaker_seed0 with 1190 train and 210 val clips, 1.06 M trainable parameters, cuda
+[18:24:28]   speech_wavlm_cross_speaker_seed0 best val macro F1 1.0000 at epoch 4
+[18:24:28]   speech_wavlm_cross_speaker_seed0 test accuracy 0.7300, macro F1 0.6883 (1400 clips)
+[18:24:28]   1.3 min
+[18:25:33] speech_mel_cross_speaker_seed0 with 1190 train and 210 val clips, 1.29 M trainable parameters, cuda
+[18:25:33]   speech_mel_cross_speaker_seed0 best val macro F1 1.0000 at epoch 15
+[18:25:33]   speech_mel_cross_speaker_seed0 test accuracy 0.5429, macro F1 0.5172 (1400 clips)
+[18:25:33]   1.1 min
+[18:26:01] text_gt_cross_speaker_seed0 with 1190 train and 210 val clips, 1.32 M trainable parameters, cuda
+[18:26:01]   text_gt_cross_speaker_seed0 best val macro F1 0.0633 at epoch 20
+[18:26:01]   text_gt_cross_speaker_seed0 test accuracy 0.1429, macro F1 0.0635 (1400 clips)
+[18:26:01]   0.5 min
+[18:26:51] text_asr_cross_speaker_seed0 with 1190 train and 210 val clips, 1.32 M trainable parameters, cuda
+[18:26:51]   text_asr_cross_speaker_seed0 best val macro F1 0.2047 at epoch 30
+[18:26:51]   text_asr_cross_speaker_seed0 test accuracy 0.1793, macro F1 0.1354 (1400 clips)
+[18:26:51]   0.8 min
+[18:28:33] fusion_wavlm-gt-gated_cross_speaker_seed0 with 1190 train and 210 val clips, 2.60 M trainable parameters, cuda
+[18:28:33]   fusion_wavlm-gt-gated_cross_speaker_seed0 best val macro F1 1.0000 at epoch 7
+[18:28:33]   fusion_wavlm-gt-gated_cross_speaker_seed0 test accuracy 0.5693, macro F1 0.5132 (1400 clips)
+[18:28:33]   1.7 min
+[18:30:27] fusion_wavlm-asr-gated_cross_speaker_seed0 with 1190 train and 210 val clips, 2.60 M trainable parameters, cuda
+[18:30:27]   fusion_wavlm-asr-gated_cross_speaker_seed0 best val macro F1 1.0000 at epoch 8
+[18:30:27]   fusion_wavlm-asr-gated_cross_speaker_seed0 test accuracy 0.4414, macro F1 0.4348 (1400 clips)
+[18:30:27]   1.9 min
+[18:32:13] fusion_wavlm-gt-concat_cross_speaker_seed0 with 1190 train and 210 val clips, 2.47 M trainable parameters, cuda
+[18:32:13]   fusion_wavlm-gt-concat_cross_speaker_seed0 best val macro F1 1.0000 at epoch 8
+[18:32:13]   fusion_wavlm-gt-concat_cross_speaker_seed0 test accuracy 0.5200, macro F1 0.4903 (1400 clips)
+[18:32:13]   1.8 min
+[18:33:28] speech_wavlm_cross_speaker_seed1 with 1190 train and 210 val clips, 1.06 M trainable parameters, cuda
+[18:33:28]   speech_wavlm_cross_speaker_seed1 best val macro F1 1.0000 at epoch 3
+[18:33:28]   speech_wavlm_cross_speaker_seed1 test accuracy 0.6514, macro F1 0.5899 (1400 clips)
+[18:33:28]   1.3 min
+[18:34:24] speech_mel_cross_speaker_seed1 with 1190 train and 210 val clips, 1.29 M trainable parameters, cuda
+[18:34:24]   speech_mel_cross_speaker_seed1 best val macro F1 1.0000 at epoch 11
+[18:34:24]   speech_mel_cross_speaker_seed1 test accuracy 0.5386, macro F1 0.5315 (1400 clips)
+[18:34:24]   0.9 min
+[18:34:42] text_gt_cross_speaker_seed1 with 1190 train and 210 val clips, 1.32 M trainable parameters, cuda
+[18:34:42]   text_gt_cross_speaker_seed1 best val macro F1 0.0357 at epoch 1
+[18:34:42]   text_gt_cross_speaker_seed1 test accuracy 0.1429, macro F1 0.0357 (1400 clips)
+[18:34:42]   0.3 min
+[18:35:27] text_asr_cross_speaker_seed1 with 1190 train and 210 val clips, 1.32 M trainable parameters, cuda
+[18:35:27]   text_asr_cross_speaker_seed1 best val macro F1 0.1887 at epoch 25
+[18:35:27]   text_asr_cross_speaker_seed1 test accuracy 0.1679, macro F1 0.1096 (1400 clips)
+[18:35:27]   0.8 min
+[18:36:59] fusion_wavlm-gt-gated_cross_speaker_seed1 with 1190 train and 210 val clips, 2.60 M trainable parameters, cuda
+[18:36:59]   fusion_wavlm-gt-gated_cross_speaker_seed1 best val macro F1 1.0000 at epoch 5
+[18:36:59]   fusion_wavlm-gt-gated_cross_speaker_seed1 test accuracy 0.5357, macro F1 0.4838 (1400 clips)
+[18:36:59]   1.5 min
+[18:38:43] fusion_wavlm-asr-gated_cross_speaker_seed1 with 1190 train and 210 val clips, 2.60 M trainable parameters, cuda
+[18:38:43]   fusion_wavlm-asr-gated_cross_speaker_seed1 best val macro F1 1.0000 at epoch 6
+[18:38:43]   fusion_wavlm-asr-gated_cross_speaker_seed1 test accuracy 0.5686, macro F1 0.5382 (1400 clips)
+[18:38:43]   1.7 min
+[18:40:19] fusion_wavlm-gt-concat_cross_speaker_seed1 with 1190 train and 210 val clips, 2.47 M trainable parameters, cuda
+[18:40:19]   fusion_wavlm-gt-concat_cross_speaker_seed1 best val macro F1 0.9952 at epoch 6
+[18:40:19]   fusion_wavlm-gt-concat_cross_speaker_seed1 test accuracy 0.6343, macro F1 0.5824 (1400 clips)
+[18:40:19]   1.6 min
+[18:41:34] speech_wavlm_cross_speaker_seed2 with 1190 train and 210 val clips, 1.06 M trainable parameters, cuda
+[18:41:34]   speech_wavlm_cross_speaker_seed2 best val macro F1 1.0000 at epoch 3
+[18:41:34]   speech_wavlm_cross_speaker_seed2 test accuracy 0.5871, macro F1 0.5159 (1400 clips)
+[18:41:34]   1.2 min
+[18:42:25] speech_mel_cross_speaker_seed2 with 1190 train and 210 val clips, 1.29 M trainable parameters, cuda
+[18:42:25]   speech_mel_cross_speaker_seed2 best val macro F1 1.0000 at epoch 8
+[18:42:25]   speech_mel_cross_speaker_seed2 test accuracy 0.4836, macro F1 0.4158 (1400 clips)
+[18:42:25]   0.8 min
+[18:42:42] text_gt_cross_speaker_seed2 with 1190 train and 210 val clips, 1.32 M trainable parameters, cuda
+[18:42:42]   text_gt_cross_speaker_seed2 best val macro F1 0.0736 at epoch 1
+[18:42:42]   text_gt_cross_speaker_seed2 test accuracy 0.1429, macro F1 0.0769 (1400 clips)
+[18:42:42]   0.3 min
+[18:43:33] text_asr_cross_speaker_seed2 with 1190 train and 210 val clips, 1.32 M trainable parameters, cuda
+[18:43:33]   text_asr_cross_speaker_seed2 best val macro F1 0.2365 at epoch 33
+[18:43:33]   text_asr_cross_speaker_seed2 test accuracy 0.1636, macro F1 0.1567 (1400 clips)
+[18:43:33]   0.9 min
+[18:45:06] fusion_wavlm-gt-gated_cross_speaker_seed2 with 1190 train and 210 val clips, 2.60 M trainable parameters, cuda
+[18:45:06]   fusion_wavlm-gt-gated_cross_speaker_seed2 best val macro F1 1.0000 at epoch 5
+[18:45:06]   fusion_wavlm-gt-gated_cross_speaker_seed2 test accuracy 0.5700, macro F1 0.5164 (1400 clips)
+[18:45:06]   1.6 min
+[18:47:01] fusion_wavlm-asr-gated_cross_speaker_seed2 with 1190 train and 210 val clips, 2.60 M trainable parameters, cuda
+[18:47:01]   fusion_wavlm-asr-gated_cross_speaker_seed2 best val macro F1 1.0000 at epoch 8
+[18:47:01]   fusion_wavlm-asr-gated_cross_speaker_seed2 test accuracy 0.7164, macro F1 0.6892 (1400 clips)
+[18:47:01]   1.9 min
+[18:48:53] fusion_wavlm-gt-concat_cross_speaker_seed2 with 1190 train and 210 val clips, 2.47 M trainable parameters, cuda
+[18:48:53]   fusion_wavlm-gt-concat_cross_speaker_seed2 best val macro F1 1.0000 at epoch 9
+[18:48:53]   fusion_wavlm-gt-concat_cross_speaker_seed2 test accuracy 0.5050, macro F1 0.4876 (1400 clips)
+[18:48:53]   1.9 min
+[18:48:53] all done in 25.8 min
+
+[2026-11-18 18:49:31 IST] $ /usr/bin/python3 -W ignore scripts/analyse.py
+[18:50:25] 42 runs with test results
+[18:50:25] # Test accuracy of every model variant
+[18:50:25] Mean ± standard deviation over seeds, in percent. Chance is 14.3 % (7 balanced classes).
+[18:50:25] ## Split `word` (420 test clips)
+[18:50:25] | pipeline | variant | accuracy | macro F1 | seeds |
+[18:50:25] |---|---|---|---|---|
+[18:50:25] | speech | mel | 99.8 ± 0.1 | 99.8 ± 0.1 | 3 |
+[18:50:25] | speech | wavlm | 99.8 ± 0.2 | 99.8 ± 0.2 | 3 |
+[18:50:25] | text | asr | 19.0 ± 0.3 | 12.5 ± 0.5 | 3 |
+[18:50:25] | text | gt | 14.3 ± 0.0 | 4.5 ± 1.3 | 3 |
+[18:50:25] | fusion | wavlm-asr-gated | 99.9 ± 0.1 | 99.9 ± 0.1 | 3 |
+[18:50:25] | fusion | wavlm-gt-concat | 99.9 ± 0.1 | 99.9 ± 0.1 | 3 |
+[18:50:25] | fusion | wavlm-gt-gated | 99.9 ± 0.1 | 99.9 ± 0.1 | 3 |
+[18:50:25] ## Split `cross_speaker` (1400 test clips)
+[18:50:25] | pipeline | variant | accuracy | macro F1 | seeds |
+[18:50:25] |---|---|---|---|---|
+[18:50:25] | speech | mel | 52.2 ± 2.7 | 48.8 ± 5.1 | 3 |
+[18:50:25] | speech | wavlm | 65.6 ± 5.8 | 59.8 ± 7.1 | 3 |
+[18:50:25] | text | asr | 17.0 ± 0.7 | 13.4 ± 1.9 | 3 |
+[18:50:25] | text | gt | 14.3 ± 0.0 | 5.9 ± 1.7 | 3 |
+[18:50:25] | fusion | wavlm-asr-gated | 57.5 ± 11.2 | 55.4 ± 10.4 | 3 |
+[18:50:25] | fusion | wavlm-gt-concat | 55.3 ± 5.8 | 52.0 ± 4.4 | 3 |
+[18:50:25] | fusion | wavlm-gt-gated | 55.8 ± 1.6 | 50.4 ± 1.5 | 3 |
+[18:50:25] # Where fusion changes the speech only prediction
+[18:50:25] Same split and seed, clip by clip. fixed = speech wrong and fusion right, broken = speech right and fusion wrong.
+[18:50:25] | split | fusion variant | seed | speech acc | fusion acc | fixed | broken | gate mean |
+[18:50:25] |---|---|---|---|---|---|---|---|
+[18:50:25] | word | wavlm-asr-gated | 0 | 99.5 | 100.0 | 2 | 0 | 0.8836 |
+[18:50:25] | word | wavlm-asr-gated | 1 | 100.0 | 99.8 | 0 | 1 | 0.8858 |
+[18:50:25] | word | wavlm-asr-gated | 2 | 100.0 | 100.0 | 0 | 0 | 0.8343 |
+[18:50:25] | word | wavlm-gt-concat | 0 | 99.5 | 100.0 | 2 | 0 |  |
+[18:50:25] | word | wavlm-gt-concat | 1 | 100.0 | 100.0 | 0 | 0 |  |
+[18:50:25] | word | wavlm-gt-concat | 2 | 100.0 | 99.8 | 0 | 1 |  |
+[18:50:25] | word | wavlm-gt-gated | 0 | 99.5 | 100.0 | 2 | 0 | 0.8464 |
+[18:50:25] | word | wavlm-gt-gated | 1 | 100.0 | 100.0 | 0 | 0 | 0.972 |
+[18:50:25] | word | wavlm-gt-gated | 2 | 100.0 | 99.8 | 0 | 1 | 0.8726 |
+[18:50:25] | cross_speaker | wavlm-asr-gated | 0 | 73.0 | 44.1 | 80 | 484 | 0.8626 |
+[18:50:25] | cross_speaker | wavlm-asr-gated | 1 | 65.1 | 56.9 | 69 | 185 | 0.9285 |
+[18:50:25] | cross_speaker | wavlm-asr-gated | 2 | 58.7 | 71.6 | 258 | 77 | 0.8501 |
+[18:50:25] | cross_speaker | wavlm-gt-concat | 0 | 73.0 | 52.0 | 191 | 485 |  |
+[18:50:25] | cross_speaker | wavlm-gt-concat | 1 | 65.1 | 63.4 | 104 | 128 |  |
+[18:50:25] | cross_speaker | wavlm-gt-concat | 2 | 58.7 | 50.5 | 49 | 164 |  |
+[18:50:25] | cross_speaker | wavlm-gt-gated | 0 | 73.0 | 56.9 | 136 | 361 | 0.8384 |
+[18:50:25] | cross_speaker | wavlm-gt-gated | 1 | 65.1 | 53.6 | 36 | 198 | 0.8842 |
+[18:50:25] | cross_speaker | wavlm-gt-gated | 2 | 58.7 | 57.0 | 158 | 182 | 0.8958 |
+[18:50:25] silhouette {'word gt temporal': 0.6028, 'word gt contextual': -0.0167, 'word gt fusion': 0.8926, 'word asr temporal': 0.6028, 'word asr contextual': -0.4085, 'word asr fusion': 0.8851, 'word fusion-model temporal': 0.8243, 'word fusion-model contextual': -0.0167, 'word fusion-model fusion': 0.8926, 'cross_speaker gt temporal': 0.5188, 'cross_speaker gt contextual': -0.005, 'cross_speaker gt fusion': 0.4484, 'cross_speaker asr temporal': 0.5188, 'cross_speaker asr contextual': -0.261, 'cross_speaker asr fusion': 0.4626, 'cross_speaker fusion-model temporal': 0.4369, 'cross_speaker fusion-model contextual': -0.005, 'cross_speaker fusion-model fusion': 0.4484}
+[18:50:25] # Failure cases
+[18:50:25] The most confident errors of the multimodal model (fusion_wavlm-gt-gated, seed 0), one per confusion pair, from the word split first and then the cross speaker split.
+[18:50:25] | # | split | clip | true | fusion predicts (confidence) | speech only | text only | fusion with ASR text | Whisper transcript |
+[18:50:25] |---|---|---|---|---|---|---|---|---|
+[18:50:25] | 1 | cross_speaker | YAF_tire_angry | angry | disgust (0.97) | angry | happy | disgust | Say the word tire. |
+[18:50:25] | 2 | cross_speaker | YAF_yearn_pleasant_surprise | pleasant_surprise | happy (0.96) | pleasant_surprise | disgust | happy | Say the word yearn. |
+[18:50:25] | 3 | cross_speaker | YAF_bean_angry | angry | sad (0.96) | fear | disgust | angry | Say the word bean. |
+[18:50:25] | 4 | cross_speaker | YAF_bath_fear | fear | neutral (0.96) | fear | happy | neutral | Say the word, Beth. |
+[18:50:25] | 5 | cross_speaker | YAF_jail_disgust | disgust | pleasant_surprise (0.96) | disgust | disgust | pleasant_surprise | Say the word jail. |

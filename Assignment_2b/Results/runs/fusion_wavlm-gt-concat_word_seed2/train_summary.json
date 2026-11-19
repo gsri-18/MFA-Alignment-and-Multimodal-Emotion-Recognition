@@ -1,0 +1,58 @@
+{
+ "run": "fusion_wavlm-gt-concat_word_seed2",
+ "args": {
+  "split": "word",
+  "features": "wavlm",
+  "text_source": "gt",
+  "fusion": "concat",
+  "modality_dropout": 0.0,
+  "seed": 2,
+  "epochs": 40,
+  "patience": 10,
+  "batch_size": 32,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.05,
+  "num_workers": 0,
+  "limit": 0,
+  "pipeline": "fusion"
+ },
+ "best_epoch": 8,
+ "best_val_macro_f1": 0.9976188822636493,
+ "parameters": 2473251,
+ "train_clips": 1960,
+ "val_clips": 420,
+ "minutes": 2.5,
+ "layer_weights": {
+  "speech": [
+   0.0896,
+   0.0877,
+   0.0894,
+   0.0861,
+   0.0831,
+   0.0794,
+   0.0764,
+   0.0727,
+   0.0687,
+   0.0679,
+   0.0665,
+   0.0663,
+   0.0663
+  ],
+  "text": [
+   0.0769,
+   0.0764,
+   0.0767,
+   0.0791,
+   0.0787,
+   0.0789,
+   0.0789,
+   0.0771,
+   0.0764,
+   0.0755,
+   0.075,
+   0.0753,
+   0.0752
+  ]
+ }
+}

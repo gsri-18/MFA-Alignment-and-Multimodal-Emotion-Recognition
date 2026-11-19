@@ -7,9 +7,9 @@
 
 Speech preprocessing. Every clip is resampled to 16 kHz (TESS is recorded at 24.4 kHz and one clip at
 96 kHz, and WavLM is trained on 16 kHz audio), the leading and trailing silence is trimmed (anything
-30 dB below the clip's peak, padded back by 50 ms) and the clip is capped at 4 s. Clips are not
-loudness normalised, because intensity is an emotional cue, and WavLM gets the zero mean, unit
-variance input it was trained with.
+30 dB below the clip's peak, padded back by 50 ms) and the clip is capped at 4 s. WavLM gets the
+zero mean, unit variance input it was trained with, so the overall level of a clip does not reach it,
+only the changes of level within the clip. The log mel baseline keeps the absolute level.
 
 Speech features (time steps x features). WavLM Base+ hidden states from the CNN output and all 12
 transformer layers, [13, T, 768] at 50 frames per second, stored in float16. The speech model learns
